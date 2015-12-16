@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Config>
+	<dirTorrent>A:\torrent\Completo</dirTorrent>
+	<errorLog>A:\torrent\Completo</errorLog>
+	<mediaLog>A:\torrent\Completo</mediaLog>
+	<dirTrabajo>A:\Iomega</dirTrabajo>
+    
+	
+</Config>
