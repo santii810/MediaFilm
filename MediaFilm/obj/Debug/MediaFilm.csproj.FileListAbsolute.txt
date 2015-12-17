@@ -12,3 +12,17 @@ C:\Users\sgomez\OneDrive\Proyectos\VisualStudio\MediaFilm\MediaFilm\obj\Debug\Me
 C:\Users\sgomez\OneDrive\Proyectos\VisualStudio\MediaFilm\MediaFilm\obj\Debug\MediaFilm.csproj.GenerateResource.Cache
 C:\Users\sgomez\OneDrive\Proyectos\VisualStudio\MediaFilm\MediaFilm\obj\Debug\MediaFilm.exe
 C:\Users\sgomez\OneDrive\Proyectos\VisualStudio\MediaFilm\MediaFilm\obj\Debug\MediaFilm.pdb
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\bin\Debug\MediaFilm.exe.config
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.exe
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.pdb
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.csprojResolveAssemblyReference.cache
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MainWindow.g.cs
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\App.g.cs
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm_MarkupCompile.cache
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm_MarkupCompile.lref
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\bin\Debug\MediaFilm.exe
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\bin\Debug\MediaFilm.pdb
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MainWindow.baml
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.g.resources
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.Properties.Resources.resources
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.csproj.GenerateResource.Cache

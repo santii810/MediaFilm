@@ -116,25 +116,32 @@ namespace MediaFilm
             try
             {
                 fichero.Delete();
-                xmlMediaLog.añadirEntrada(new Log("Borrado", "Fichero '" + nombreFichero + "' borrado correctamente")
+                xmlMediaLog.añadirEntrada(new Log("Borrado", "Fichero '" + nombreFichero + "' borrado correctamente"));
             }
             catch (Exception e)
             {
-                xmlErrorLog.añadirEntrada(new Log("Error de borrado", "Error borrando '" + nombreFichero + "' \t" + e.ToString()));
+                xmlErrorLog.añadirEntrada(new Log("Error borrando", "Error borrando '" + nombreFichero + "' \t" + e.ToString()));
             }
         }
         private void moverFichero(FileInfo fichero)
         {
             string nombreFichero = fichero.Name;
             string pathDestino = config.dirTrabajo + @"\" + fichero.Name;
-            fichero.MoveTo(pathDestino);
-            xmlMediaLog.añadirEntrada(new Log("Movido", "Fichero '" + nombreFichero + "' movido a '" + fichero.FullName + "'"));
+            try
+            {
+                fichero.MoveTo(pathDestino);
+                xmlMediaLog.añadirEntrada(new Log("Movido", "Fichero '" + nombreFichero + "' movido a '" + fichero.FullName + "'"));
+
+            }
+            catch (Exception e)
+            {
+                xmlErrorLog.añadirEntrada(new Log("Error moviendo", "Error moviendo '" + nombreFichero + "' \t" + e.ToString()));
+
+            }
         }
 
 
-
-
-
+        //listeners
         private void buttonOrdenaSeries_Click(object sender, RoutedEventArgs e)
         {
             recorrerTorrent();

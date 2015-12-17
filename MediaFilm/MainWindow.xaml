@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MediaFilm"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MediaFilm" Height="350" Width="525">
     <Grid>
-        <Menu IsMainMenu="True" Margin="0,0,0,298" Grid.ColumnSpan="2">
+        <Menu IsMainMenu="True" Margin="0,0,0,294">
             <MenuItem Header="Ejecutar" />
             <MenuItem Header="Añadir" />
             <MenuItem Header="_View" />
             <MenuItem Header="_Window" />
             <MenuItem Header="_Help" />
         </Menu>
-        <Button x:Name="buttonOrdenaSeries" Content="Ordena series" HorizontalAlignment="Left" Height="42" Margin="10,26,0,0" VerticalAlignment="Top" Width="81" Click="buttonOrdenaSeries_Click"/>
+        <Button x:Name="buttonOrdenaSeries" Content="Ordena series" HorizontalAlignment="Left" Height="42" Margin="19,47,0,0" VerticalAlignment="Top" Width="81" Click="buttonOrdenaSeries_Click"/>
 
 
     </Grid>
