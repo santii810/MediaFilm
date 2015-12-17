@@ -41,7 +41,7 @@ namespace MediaFilm {
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
-        #line 17 "..\..\MainWindow.xaml"
+        #line 18 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button buttonOrdenaSeries;
         
@@ -79,9 +79,17 @@ namespace MediaFilm {
             switch (connectionId)
             {
             case 1:
+            
+            #line 12 "..\..\MainWindow.xaml"
+            ((System.Windows.Controls.MenuItem)(target)).Click += new System.Windows.RoutedEventHandler(this.MenuItem_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 2:
             this.buttonOrdenaSeries = ((System.Windows.Controls.Button)(target));
             
-            #line 17 "..\..\MainWindow.xaml"
+            #line 18 "..\..\MainWindow.xaml"
             this.buttonOrdenaSeries.Click += new System.Windows.RoutedEventHandler(this.buttonOrdenaSeries_Click);
             
             #line default

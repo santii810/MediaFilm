@@ -1,0 +1,1172 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Series>
+  <serie titulo="666 Park Avenue">
+    <titulo>666 Park Avenue</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Agents of SHIELD">
+    <titulo>Agents of SHIELD</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Allegiance">
+    <titulo>Allegiance</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Almost Human">
+    <titulo>Almost Human</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Alphas">
+    <titulo>Alphas</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="American dad">
+    <titulo>American dad</titulo>
+    <temporadaActual>10</temporadaActual>
+    <numeroTemporadas>10</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="American Summer">
+    <titulo>American Summer</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Amigos con suerte">
+    <titulo>Amigos con suerte</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Apocalipsis en el instituto">
+    <titulo>Apocalipsis en el instituto</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Arrow">
+    <titulo>Arrow</titulo>
+    <temporadaActual>4</temporadaActual>
+    <numeroTemporadas>4</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mvk</extension>
+  </serie>
+  <serie titulo="Ataque a los titanes">
+    <titulo>Ataque a los titanes</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="BackStorm">
+    <titulo>BackStorm</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Banshee">
+    <titulo>Banshee</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Bates Motel">
+    <titulo>Bates Motel</titulo>
+    <temporadaActual>3</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mvk</extension>
+  </serie>
+  <serie titulo="Benched">
+    <titulo>Benched</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Betrayal">
+    <titulo>Betrayal</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Better call Saul">
+    <titulo>Better call Saul</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Between">
+    <titulo>Between</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Big Time in Hollywood">
+    <titulo>Big Time in Hollywood</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Black Mirror">
+    <titulo>Black Mirror</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="BloodLine">
+    <titulo>BloodLine</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Boardwalk Empire">
+    <titulo>Boardwalk Empire</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Breaking bad">
+    <titulo>Breaking bad</titulo>
+    <temporadaActual>5</temporadaActual>
+    <numeroTemporadas>5</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Broadchurch">
+    <titulo>Broadchurch</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Bron">
+    <titulo>Bron</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Brotherhood">
+    <titulo>Brotherhood</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Catastrophe">
+    <titulo>Catastrophe</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Chuck">
+    <titulo>Chuck</titulo>
+    <temporadaActual>5</temporadaActual>
+    <numeroTemporadas>5</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Community">
+    <titulo>Community</titulo>
+    <temporadaActual>4</temporadaActual>
+    <numeroTemporadas>4</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Como conoci a vuestra madre">
+    <titulo>Como conoci a vuestra madre</titulo>
+    <temporadaActual>9</temporadaActual>
+    <numeroTemporadas>9</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Crisis">
+    <titulo>Crisis</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Crosing lines">
+    <titulo>Crosing lines</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Daredevil">
+    <titulo>Daredevil</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Dates">
+    <titulo>Dates</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Defiance">
+    <titulo>Defiance</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Dexter">
+    <titulo>Dexter</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>8</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Dominion">
+    <titulo>Dominion</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mvk</extension>
+  </serie>
+  <serie titulo="Dos hombres y medio">
+    <titulo>Dos hombres y medio</titulo>
+    <temporadaActual>12</temporadaActual>
+    <numeroTemporadas>12</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="El mentalista">
+    <titulo>El mentalista</titulo>
+    <temporadaActual>4</temporadaActual>
+    <numeroTemporadas>4</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="El Ministerio del tiempo">
+    <titulo>El Ministerio del tiempo</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="El ultimo hombre en la tierra">
+    <titulo>El ultimo hombre en la tierra</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Elementary">
+    <titulo>Elementary</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Episodes">
+    <titulo>Episodes</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Eres lo peor">
+    <titulo>Eres lo peor</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Eureka">
+    <titulo>Eureka</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>4</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Falling Skies">
+    <titulo>Falling Skies</titulo>
+    <temporadaActual>5</temporadaActual>
+    <numeroTemporadas>5</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Familia de acogida">
+    <titulo>Familia de acogida</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Fargo">
+    <titulo>Fargo</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Fear the walking dead">
+    <titulo>Fear the walking dead</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Finales felices">
+    <titulo>Finales felices</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Forever">
+    <titulo>Forever</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Fortitude">
+    <titulo>Fortitude</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Fringe">
+    <titulo>Fringe</titulo>
+    <temporadaActual>6</temporadaActual>
+    <numeroTemporadas>6</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Generation kill">
+    <titulo>Generation kill</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Getting on">
+    <titulo>Getting on</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Gotham">
+    <titulo>Gotham</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Grace and Frankie">
+    <titulo>Grace and Frankie</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Graceland">
+    <titulo>Graceland</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mvk</extension>
+  </serie>
+  <serie titulo="Hannibal">
+    <titulo>Hannibal</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Hart of Dixie">
+    <titulo>Hart of Dixie</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Helix">
+    <titulo>Helix</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Hello ladies">
+    <titulo>Hello ladies</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Hemlock grove">
+    <titulo>Hemlock grove</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Heroes Reborn">
+    <titulo>Heroes Reborn</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Hijos del tercer Reich">
+    <titulo>Hijos del tercer Reich</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Hope">
+    <titulo>Hope</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="House of cards">
+    <titulo>House of cards</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="House of lies">
+    <titulo>House of lies</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="In the flesh">
+    <titulo>In the flesh</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Inteligence">
+    <titulo>Inteligence</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Invisible">
+    <titulo>Invisible</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Killjoys">
+    <titulo>Killjoys</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="La cupula">
+    <titulo>La cupula</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Ladron de guante blanco">
+    <titulo>Ladron de guante blanco</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>4</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Legends">
+    <titulo>Legends</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Les revenant">
+    <titulo>Les revenant</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Looking">
+    <titulo>Looking</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Los cien">
+    <titulo>Los cien</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Los crimenes de Fjallbacka">
+    <titulo>Los crimenes de Fjallbacka</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Los farsantes">
+    <titulo>Los farsantes</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Louie">
+    <titulo>Louie</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Mad Men">
+    <titulo>Mad Men</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>6</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Manhattan">
+    <titulo>Manhattan</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Manhattan Love Story">
+    <titulo>Manhattan Love Story</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Masters of sex">
+    <titulo>Masters of sex</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Men at work">
+    <titulo>Men at work</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Misfits">
+    <titulo>Misfits</titulo>
+    <temporadaActual>5</temporadaActual>
+    <numeroTemporadas>5</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Mob City">
+    <titulo>Mob City</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Modern Family">
+    <titulo>Modern Family</titulo>
+    <temporadaActual>7</temporadaActual>
+    <numeroTemporadas>7</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Mom">
+    <titulo>Mom</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Mozart in the jungle">
+    <titulo>Mozart in the jungle</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Mr selfridge">
+    <titulo>Mr selfridge</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Nashville">
+    <titulo>Nashville</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Orange is the new black">
+    <titulo>Orange is the new black</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Outlander">
+    <titulo>Outlander</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Padre de familia">
+    <titulo>Padre de familia</titulo>
+    <temporadaActual>13</temporadaActual>
+    <numeroTemporadas>14</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Peaky Blinders">
+    <titulo>Peaky Blinders</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Penny Dreadful">
+    <titulo>Penny Dreadful</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkV</extension>
+  </serie>
+  <serie titulo="Peque¤as mentirosas">
+    <titulo>Peque¤as mentirosas</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Perception">
+    <titulo>Perception</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Person of interest">
+    <titulo>Person of interest</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Powers">
+    <titulo>Powers</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Ray Donovan">
+    <titulo>Ray Donovan</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Real humans">
+    <titulo>Real humans</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Refugiados">
+    <titulo>Refugiados</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Rehenes">
+    <titulo>Rehenes</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Residue">
+    <titulo>Residue</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Revolution">
+    <titulo>Revolution</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Roma criminal">
+    <titulo>Roma criminal</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Scandal">
+    <titulo>Scandal</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Scorpion">
+    <titulo>Scorpion</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Sense 8">
+    <titulo>Sense 8</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Shameless">
+    <titulo>Shameless</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Silicon Valley">
+    <titulo>Silicon Valley</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Sleepy Hollow">
+    <titulo>Sleepy Hollow</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Sons of anarchy">
+    <titulo>Sons of anarchy</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>4</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Star Wars Rebels">
+    <titulo>Star Wars Rebels</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Suits">
+    <titulo>Suits</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The affair">
+    <titulo>The affair</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="The Americans">
+    <titulo>The Americans</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The big bang theory">
+    <titulo>The big bang theory</titulo>
+    <temporadaActual>8</temporadaActual>
+    <numeroTemporadas>8</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The blacklist">
+    <titulo>The blacklist</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="The Bridge">
+    <titulo>The Bridge</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The brink">
+    <titulo>The brink</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The Client List">
+    <titulo>The Client List</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The crazy ones">
+    <titulo>The crazy ones</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The Flash">
+    <titulo>The Flash</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="The Following">
+    <titulo>The Following</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv
+</extension>
+  </serie>
+  <serie titulo="The last ship">
+    <titulo>The last ship</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mvk</extension>
+  </serie>
+  <serie titulo="The leftovers">
+    <titulo>The leftovers</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The Millers">
+    <titulo>The Millers</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The Mindy Proyect">
+    <titulo>The Mindy Proyect</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The newsroom">
+    <titulo>The newsroom</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="The returned">
+    <titulo>The returned</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="The strain">
+    <titulo>The strain</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="The Walking Dead">
+    <titulo>The Walking Dead</titulo>
+    <temporadaActual>6</temporadaActual>
+    <numeroTemporadas>6</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mvk</extension>
+  </serie>
+  <serie titulo="The Wrong Mans">
+    <titulo>The Wrong Mans</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Transporter">
+    <titulo>Transporter</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Trophy Wife">
+    <titulo>Trophy Wife</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Unbreakable Kimmy Schmidt">
+    <titulo>Unbreakable Kimmy Schmidt</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Vaya Vecinos">
+    <titulo>Vaya Vecinos</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Veep">
+    <titulo>Veep</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Vikingos">
+    <titulo>Vikingos</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Vivo con modelos">
+    <titulo>Vivo con modelos</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Wilfred">
+    <titulo>Wilfred</titulo>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>F</estado>
+    <extension>.avi</extension>
+  <serie titulo="Da Vinci demons">
+  </serie>
+    <titulo>Da Vinci daemons</titulo>
+    <temporadaActual>3</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+</Series>
