@@ -206,11 +206,8 @@ namespace MediaFilm
             List<String> tmp = new List<string>();
 
             mens.Add(DateTime.Now.ToString());
-            mens.Add("Videos movidos: " + numerosRenombrado[0]);
-            mens.Add("Ficheros borrados: " + numerosRenombrado[1]);
-            mens.Add("Error moviendo " + numerosRenombrado[2] + " ficheros");
-            mens.Add("Error borrando " + numerosRenombrado[3] + " ficheros");
-            mens.Add("Ficheros no soportados: " + numerosRenombrado[4]);
+            mens.Add("Videos renombrados: " + numerosRenombrado[0]);
+            mens.Add("Errores renombrando: " + numerosRenombrado[1]);
             mens.Add("");
 
             tmp.AddRange(this.mensajes);
@@ -239,7 +236,7 @@ namespace MediaFilm
                             {
                                 FileInfo fi;
                                 string dirSerie = @config.dirTrabajo + @"\" + itSerie.titulo + @"\Temporada" + temp + @"\";
-                                string[] strPatrones = new string[]                     
+                                string[] strPatrones = new string[]
                                 {
                                     itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*" + itSerie.extension,
                                     itPatron.textoPatron + "*" + temp.ToString() + "x0" + cap.ToString() + "*" + itSerie.extension,
@@ -278,7 +275,7 @@ namespace MediaFilm
 
         private void MenuItemRemonbrar_Click(object sender, RoutedEventArgs e)
         {
-            int[] numerosRenombrado = renombrarVideos();
+            mostrarMensajesRespuestaRenombrado(renombrarVideos());
         }
     }
 }
