@@ -163,29 +163,74 @@ namespace MediaFilm
             }
             return null;
         }
-        public void ejecutarMovimiento(FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
+        public bool ejecutarMovimiento(FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
         {
             string nombreOriginal = fi.Name;
             try
             {
                 fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + "0" + cap + ext);
                 xmlMediaLog.añadirEntrada(new Log("Renombrado", "Fichero '" + nombreOriginal + "' renombrado a '" + fi.FullName + "'"));
+                return true;
             }
             catch (Exception e)
             {
                 xmlErrorLog.añadirEntrada(new Log("Error renombrando", "Fichero '" + nombreOriginal + "' no se ha podido renombrar a  '" + fi.FullName + "' /n" + e.ToString()));
+                return false;
             }
         }
-
-        private void renombrarVideos()
+        //muestra en el listbox un mensaje con las acciones realizadas por recorrer torrent
+        private void mostrarMensajesRespuestaTorrent(int[] numerosTorrent)
         {
+            List<String> mens = new List<string>();
+            List<String> tmp = new List<string>();
+
+            mens.Add(DateTime.Now.ToString());
+            mens.Add("Videos movidos: " + numerosTorrent[0]);
+            mens.Add("Ficheros borrados: " + numerosTorrent[1]);
+            mens.Add("Error moviendo " + numerosTorrent[2] + " ficheros");
+            mens.Add("Error borrando " + numerosTorrent[3] + " ficheros");
+            mens.Add("Ficheros no soportados: " + numerosTorrent[4]);
+            mens.Add("");
+
+            tmp.AddRange(this.mensajes);
+            this.mensajes.Clear();
+            this.mensajes = mens;
+            this.mensajes.AddRange(tmp);
+            listBox.Items.Clear();
+            this.mensajes.ForEach(item => listBox.Items.Add(item));
+        }
+
+        private void mostrarMensajesRespuestaRenombrado(int[] numerosRenombrado)
+        {
+            List<String> mens = new List<string>();
+            List<String> tmp = new List<string>();
+
+            mens.Add(DateTime.Now.ToString());
+            mens.Add("Videos movidos: " + numerosRenombrado[0]);
+            mens.Add("Ficheros borrados: " + numerosRenombrado[1]);
+            mens.Add("Error moviendo " + numerosRenombrado[2] + " ficheros");
+            mens.Add("Error borrando " + numerosRenombrado[3] + " ficheros");
+            mens.Add("Ficheros no soportados: " + numerosRenombrado[4]);
+            mens.Add("");
+
+            tmp.AddRange(this.mensajes);
+            this.mensajes.Clear();
+            this.mensajes = mens;
+            this.mensajes.AddRange(tmp);
+            listBox.Items.Clear();
+            this.mensajes.ForEach(item => listBox.Items.Add(item));
+        }
+        private int[] renombrarVideos()
+        {
+            int videosRenombrados = 0;
+            int erroresRenombrado = 0;
             series = xmlSeries.leerSeries();
             series.Sort();
             foreach (Serie itSerie in series)
             {
                 if (itSerie.estado.Equals("A"))
                 {
-                    itSerie.obtenerPatrones();
+                    itSerie.obtenerPatrones(config);
                     foreach (Patron itPatron in itSerie.patrones)
                     {
                         for (int temp = itSerie.temporadaActual; temp <= itSerie.numeroTemporadas; temp++)
@@ -194,8 +239,7 @@ namespace MediaFilm
                             {
                                 FileInfo fi;
                                 string dirSerie = @config.dirTrabajo + @"\" + itSerie.titulo + @"\Temporada" + temp + @"\";
-                                Directory.CreateDirectory(dirSerie);
-                                string[] strPatrones = new string[]
+                                string[] strPatrones = new string[]                     
                                 {
                                     itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*" + itSerie.extension,
                                     itPatron.textoPatron + "*" + temp.ToString() + "x0" + cap.ToString() + "*" + itSerie.extension,
@@ -209,7 +253,8 @@ namespace MediaFilm
                                     fi = obtenerCoincidenciaBusqueda(strPatrones[i]);
                                     if (fi != null)
                                     {
-                                        ejecutarMovimiento(fi, dirSerie, itSerie.titulo, temp, cap, itSerie.extension);
+                                        if (ejecutarMovimiento(fi, dirSerie, itSerie.titulo, temp, cap, itSerie.extension)) videosRenombrados++;
+                                        else erroresRenombrado++;
                                     }
                                 }
                             }
@@ -217,42 +262,23 @@ namespace MediaFilm
                     }
                 }
             }
+            return new int[] { videosRenombrados, erroresRenombrado };
         }
 
         //listeners
         private void buttonOrdenaSeries_Click(object sender, RoutedEventArgs e)
         {
-            recorrerTorrent();
+            MenuItemRecorrerTorrent_Click(new object(), new RoutedEventArgs());
+            MenuItemRemonbrar_Click(new object(), new RoutedEventArgs());
+        }
+        private void MenuItemRecorrerTorrent_Click(object sender, RoutedEventArgs e)
+        {
+            mostrarMensajesRespuestaTorrent(recorrerTorrent());
         }
 
-        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        private void MenuItemRemonbrar_Click(object sender, RoutedEventArgs e)
         {
-            List<String> mens = new List<string>();
-            List<String> tmp = new List<string>();
-
-            int[] numerosTorrent = recorrerTorrent();
-            mens.Clear();
-            mens.Add(DateTime.Now.ToString());
-            mens.Add("Videos movidos: " + numerosTorrent[0]);
-            mens.Add("Ficheros borrados: " + numerosTorrent[1]);
-            mens.Add("Error moviendo " + numerosTorrent[2] + " ficheros");
-            mens.Add("Error borrando " + numerosTorrent[3] + " ficheros");
-            mens.Add("Ficheros no soportados: " + numerosTorrent[4]);
-            mens.Add("");
-
-            tmp = this.mensajes;
-            this.mensajes.Clear();
-            this.mensajes = mens;
-            this.mensajes.AddRange(tmp); 
-
-            listBox.Items.Clear();
-            this.mensajes.ForEach(item => listBox.Items.Add(item));
-            
-
-
+            int[] numerosRenombrado = renombrarVideos();
         }
     }
-
-
-
 }

@@ -9,9 +9,9 @@
     <Grid>
         <Menu IsMainMenu="True" Margin="0,0,0,294">
             <MenuItem Header="_Ejecutar" >
-                <MenuItem Header="_Obtener videos" Click="MenuItem_Click">
-                    
-                </MenuItem> 
+                <MenuItem Header="_RecorrerTorrent" Name="MenuItemRecorrerTorrent" Click="MenuItemRecorrerTorrent_Click">
+                </MenuItem>
+                <MenuItem Header="_Renombrar videos" Name="MenuItemRemonbrar" Click="MenuItemRemonbrar_Click"></MenuItem>
             </MenuItem>
 
         </Menu>

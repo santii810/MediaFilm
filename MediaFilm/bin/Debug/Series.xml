@@ -1160,8 +1160,8 @@
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>F</estado>
     <extension>.avi</extension>
-  <serie titulo="Da Vinci demons">
   </serie>
+  <serie titulo="Da Vinci demons">
     <titulo>Da Vinci daemons</titulo>
     <temporadaActual>3</temporadaActual>
     <numeroTemporadas>3</numeroTemporadas>
