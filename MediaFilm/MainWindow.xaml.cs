@@ -25,11 +25,12 @@ namespace MediaFilm
         private ConfigXML xmlConfig = new ConfigXML();
         private LoggerXML xmlMediaLog;
         private LoggerXML xmlErrorLog;
-
+        private SeriesXML xmlSeries;
         //clases
         private Config config;
 
-
+        //listas
+        List<Serie> series = new List<Serie>();
 
 
         public MainWindow()
@@ -38,6 +39,7 @@ namespace MediaFilm
             config = xmlConfig.leerConfig();
             xmlMediaLog = new LoggerXML(config.mediaLog);
             xmlErrorLog = new LoggerXML(config.errorLog);
+            xmlSeries = new SeriesXML(config);
         }
 
         //funcion recursiva que devuelve todos los ficheros dentro de la carpeta y subcarpeta enviada como parametro
@@ -131,7 +133,6 @@ namespace MediaFilm
             {
                 fichero.MoveTo(pathDestino);
                 xmlMediaLog.añadirEntrada(new Log("Movido", "Fichero '" + nombreFichero + "' movido a '" + fichero.FullName + "'"));
-
             }
             catch (Exception e)
             {
@@ -139,10 +140,42 @@ namespace MediaFilm
 
             }
         }
+        private void renombrarVideos()
+        {
+            series = xmlSeries.leerSeries();
+            series.Sort();
+            foreach (Serie itSerie in series)
+            {
+                if (itSerie.estado.Equals("A"))
+                {
+                    itSerie.obtenerPatrones();
+                    foreach (Patron itPatron in itSerie.patrones)
+                    {
+                        for (int temp = itSerie.temporadaActual; temp <= itSerie.numeroTemporadas; temp++)
+                        {
+                            for (int cap = 1; cap <= itSerie.capitulosPorTemporada; cap++)
+                            {
+                                FileInfo fi;
+                                string dirSerie = @config.dirTrabajo + @"\" + itSerie.titulo + @"\Temporada" + temp + @"\";
+                                if (cap < 10)
+                                {
+                                    string pat1 = itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*" + itSerie.extension;
 
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         //listeners
         private void buttonOrdenaSeries_Click(object sender, RoutedEventArgs e)
+        {
+            recorrerTorrent();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             recorrerTorrent();
         }
