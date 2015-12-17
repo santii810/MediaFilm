@@ -31,6 +31,7 @@ namespace MediaFilm
 
         //listas
         List<Serie> series = new List<Serie>();
+        List<String> mensajes = new List<string>();
 
 
         public MainWindow()
@@ -62,10 +63,13 @@ namespace MediaFilm
             return retorno;
         }
         //Recorre la carpeta torrent borrando los elementos no necesarios y llevando los ficheros a la carpeta de trabajo
-        public void recorrerTorrent()
+        public int[] recorrerTorrent()
         {
             int videosMovidos = 0;
             int ficherosBorrados = 0;
+            int errorBorrando = 0;
+            int errorMoviendo = 0;
+            int unsuported = 0;
 
             DirectoryInfo dir = new DirectoryInfo(config.dirTorrent);
             if (!dir.Exists)
@@ -82,50 +86,53 @@ namespace MediaFilm
                 {
                     //borrar
                     case ".txt":
-                        borrarFichero(item);
-                        ficherosBorrados++;
+                        if (borrarFichero(item)) ficherosBorrados++;
+                        else errorBorrando++;
                         break;
                     case ".!ut":
-                        borrarFichero(item);
-                        ficherosBorrados++;
+                        if (borrarFichero(item)) ficherosBorrados++;
+                        else errorBorrando++;
                         break;
                     case ".url":
-                        borrarFichero(item);
-                        ficherosBorrados++;
+                        if (borrarFichero(item)) ficherosBorrados++;
+                        else errorBorrando++;
                         break;
                     //mover
                     case ".avi":
-                        moverFichero(item);
-                        videosMovidos++;
+                        if (moverFichero(item)) videosMovidos++;
+                        else errorMoviendo++;
                         break;
                     case ".mkv":
-                        moverFichero(item);
-                        videosMovidos++;
+                        if (moverFichero(item)) videosMovidos++;
+                        else errorMoviendo++;
                         break;
                     case ".mp4":
-                        moverFichero(item);
-                        videosMovidos++;
+                        if (moverFichero(item)) videosMovidos++;
+                        else errorMoviendo++;
                         break;
                     default:
-                        break;
+                        unsuported++;
+                        throw new TipoArchivoNoSoportadoException();
                 }
             }
-
+            return new int[] { videosMovidos, ficherosBorrados, errorMoviendo, errorBorrando, unsuported };
         }
-        private void borrarFichero(FileInfo fichero)
+        private bool borrarFichero(FileInfo fichero)
         {
             string nombreFichero = fichero.Name;
             try
             {
                 fichero.Delete();
                 xmlMediaLog.añadirEntrada(new Log("Borrado", "Fichero '" + nombreFichero + "' borrado correctamente"));
+                return true;
             }
             catch (Exception e)
             {
                 xmlErrorLog.añadirEntrada(new Log("Error borrando", "Error borrando '" + nombreFichero + "' \t" + e.ToString()));
+                return false;
             }
         }
-        private void moverFichero(FileInfo fichero)
+        private bool moverFichero(FileInfo fichero)
         {
             string nombreFichero = fichero.Name;
             string pathDestino = config.dirTrabajo + @"\" + fichero.Name;
@@ -133,13 +140,43 @@ namespace MediaFilm
             {
                 fichero.MoveTo(pathDestino);
                 xmlMediaLog.añadirEntrada(new Log("Movido", "Fichero '" + nombreFichero + "' movido a '" + fichero.FullName + "'"));
+                return true;
             }
             catch (Exception e)
             {
                 xmlErrorLog.añadirEntrada(new Log("Error moviendo", "Error moviendo '" + nombreFichero + "' \t" + e.ToString()));
-
+                return false;
             }
         }
+        public FileInfo obtenerCoincidenciaBusqueda(string pat)
+        {
+            DirectoryInfo iomegaInfo = new DirectoryInfo(config.dirTrabajo);
+            FileSystemInfo[] fsi;
+            fsi = iomegaInfo.GetFileSystemInfos(pat);
+            if (fsi.Length == 1 && fsi[0] is FileInfo)
+            {
+                return (FileInfo)fsi[0];
+            }
+            if (fsi.Length > 1)
+            {
+                throw new TooManySerieCoincidencesException();
+            }
+            return null;
+        }
+        public void ejecutarMovimiento(FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
+        {
+            string nombreOriginal = fi.Name;
+            try
+            {
+                fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + "0" + cap + ext);
+                xmlMediaLog.añadirEntrada(new Log("Renombrado", "Fichero '" + nombreOriginal + "' renombrado a '" + fi.FullName + "'"));
+            }
+            catch (Exception e)
+            {
+                xmlErrorLog.añadirEntrada(new Log("Error renombrando", "Fichero '" + nombreOriginal + "' no se ha podido renombrar a  '" + fi.FullName + "' /n" + e.ToString()));
+            }
+        }
+
         private void renombrarVideos()
         {
             series = xmlSeries.leerSeries();
@@ -157,10 +194,23 @@ namespace MediaFilm
                             {
                                 FileInfo fi;
                                 string dirSerie = @config.dirTrabajo + @"\" + itSerie.titulo + @"\Temporada" + temp + @"\";
-                                if (cap < 10)
+                                Directory.CreateDirectory(dirSerie);
+                                string[] strPatrones = new string[]
                                 {
-                                    string pat1 = itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*" + itSerie.extension;
+                                    itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*" + itSerie.extension,
+                                    itPatron.textoPatron + "*" + temp.ToString() + "x0" + cap.ToString() + "*" + itSerie.extension,
+                                    itPatron.textoPatron + "*" + temp.ToString() + cap.ToString() + "*" + itSerie.extension,
+                                    itPatron.textoPatron + "*" + temp.ToString() + "x" + cap.ToString() + "*" + itSerie.extension
+                                };
 
+                                for (int i = 0; i <= 1; i++)
+                                {
+                                    if (cap >= 10) i += 2;
+                                    fi = obtenerCoincidenciaBusqueda(strPatrones[i]);
+                                    if (fi != null)
+                                    {
+                                        ejecutarMovimiento(fi, dirSerie, itSerie.titulo, temp, cap, itSerie.extension);
+                                    }
                                 }
                             }
                         }
@@ -177,7 +227,29 @@ namespace MediaFilm
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            recorrerTorrent();
+            List<String> mens = new List<string>();
+            List<String> tmp = new List<string>();
+
+            int[] numerosTorrent = recorrerTorrent();
+            mens.Clear();
+            mens.Add(DateTime.Now.ToString());
+            mens.Add("Videos movidos: " + numerosTorrent[0]);
+            mens.Add("Ficheros borrados: " + numerosTorrent[1]);
+            mens.Add("Error moviendo " + numerosTorrent[2] + " ficheros");
+            mens.Add("Error borrando " + numerosTorrent[3] + " ficheros");
+            mens.Add("Ficheros no soportados: " + numerosTorrent[4]);
+            mens.Add("");
+
+            tmp = this.mensajes;
+            this.mensajes.Clear();
+            this.mensajes = mens;
+            this.mensajes.AddRange(tmp); 
+
+            listBox.Items.Clear();
+            this.mensajes.ForEach(item => listBox.Items.Add(item));
+            
+
+
         }
     }
 

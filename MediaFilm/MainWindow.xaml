@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MediaFilm"
         mc:Ignorable="d"
-        Title="MediaFilm" Height="350" Width="525">
+        Title="MediaFilm" Height="350" Width="435.784">
     <Grid>
         <Menu IsMainMenu="True" Margin="0,0,0,294">
             <MenuItem Header="_Ejecutar" >
@@ -16,7 +16,6 @@
 
         </Menu>
         <Button x:Name="buttonOrdenaSeries" Content="Ordena series" HorizontalAlignment="Left" Height="42" Margin="10,30,0,0" VerticalAlignment="Top" Width="81" Click="buttonOrdenaSeries_Click"/>
-
-
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="222" Margin="10,87,0,0" VerticalAlignment="Top" Width="408"/>
     </Grid>
 </Window>

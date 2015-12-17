@@ -28,4 +28,40 @@ namespace MediaFilm
         {
         }
     }
+    class TooManySerieCoincidencesException : Exception
+    {
+        public TooManySerieCoincidencesException()
+        {
+        }
+
+        public TooManySerieCoincidencesException(string message) : base(message)
+        {
+        }
+
+        public TooManySerieCoincidencesException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+
+        protected TooManySerieCoincidencesException(SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+        }
+    }
+    class TipoArchivoNoSoportadoException : Exception
+    {
+        public TipoArchivoNoSoportadoException()
+        {
+        }
+
+        public TipoArchivoNoSoportadoException(string message) : base(message)
+        {
+        }
+
+        public TipoArchivoNoSoportadoException(string message, Exception innerException) : base(message, innerException)
+        {
+        }
+
+        protected TipoArchivoNoSoportadoException(SerializationInfo info, StreamingContext context) : base(info, context)
+        {
+        }
+    }
 }
