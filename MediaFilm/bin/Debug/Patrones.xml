@@ -186,6 +186,8 @@
   <serie titulo="Roma criminal">Roma.criminal</serie>
   <serie titulo="Scandal">Scandal</serie>
   <serie titulo="Scorpion">Scorpion</serie>
+  <serie titulo="Scorpion">Scrp</serie>
+  <serie titulo="Scorpion">Scorp</serie>
   <serie titulo="Sense 8">Sense 8</serie>
   <serie titulo="Sense 8">Sense.8</serie>
   <serie titulo="Shameless">Shameless</serie>
@@ -210,6 +212,7 @@
   <serie titulo="The Bridge">The.Bridge</serie>
   <serie titulo="The brink">The brink</serie>
   <serie titulo="The brink">The.brink</serie>
+  <serie titulo="The brink">TBrnk</serie>
   <serie titulo="The Client List">The Client List</serie>
   <serie titulo="The Client List">The.Client.List</serie>
   <serie titulo="The crazy ones">The crazy ones</serie>
@@ -251,7 +254,10 @@
   <serie titulo="Killjoys">Kllys</serie>
   <serie titulo="Da Vinci demons">Da Vinci demons</serie>
   <serie titulo="Da Vinci demons">Da.Vinci.demons</serie>
+  <serie titulo="Da Vinci demons">Da Vincis demons</serie>
+  <serie titulo="Da Vinci demons">Da.Vincis.demons</serie>
   <serie titulo="Da Vinci demons">DVD</serie>
+  <serie titulo="Da Vinci demons">DD</serie>
   <serie titulo="Heroes Reborn">HR</serie>
   <serie titulo="The last ship">TLS</serie>
   <serie titulo="The Walking Dead">TWD</serie>

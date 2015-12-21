@@ -885,7 +885,7 @@
     <temporadaActual>2</temporadaActual>
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>D</estado>
+    <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="Sense 8">
@@ -1153,6 +1153,14 @@
     <estado>D</estado>
     <extension>.avi</extension>
   </serie>
+  <serie titulo="Da Vinci demons">
+    <titulo>Da Vinci demons</titulo>
+    <temporadaActual>3</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
   <serie titulo="Wilfred">
     <titulo>Wilfred</titulo>
     <temporadaActual>2</temporadaActual>
@@ -1161,12 +1169,5 @@
     <estado>F</estado>
     <extension>.avi</extension>
   </serie>
-  <serie titulo="Da Vinci demons">
-    <titulo>Da Vinci daemons</titulo>
-    <temporadaActual>3</temporadaActual>
-    <numeroTemporadas>3</numeroTemporadas>
-    <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>A</estado>
-    <extension>.mkv</extension>
-  </serie>
+ 
 </Series>
