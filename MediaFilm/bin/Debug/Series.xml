@@ -78,7 +78,7 @@
     <numeroTemporadas>4</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
-    <extension>.mvk</extension>
+    <extension>.mkv</extension>
   </serie>
   <serie titulo="Ataque a los titanes">
     <titulo>Ataque a los titanes</titulo>
@@ -110,7 +110,7 @@
     <numeroTemporadas>3</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
-    <extension>.mvk</extension>
+    <extension>.mkv</extension>
   </serie>
   <serie titulo="Benched">
     <titulo>Benched</titulo>
@@ -294,7 +294,7 @@
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
-    <extension>.mvk</extension>
+    <extension>.mkv</extension>
   </serie>
   <serie titulo="Dos hombres y medio">
     <titulo>Dos hombres y medio</titulo>
@@ -346,8 +346,8 @@
   </serie>
   <serie titulo="Eres lo peor">
     <titulo>Eres lo peor</titulo>
-    <temporadaActual>1</temporadaActual>
-    <numeroTemporadas>1</numeroTemporadas>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
     <extension>.avi</extension>
@@ -462,7 +462,7 @@
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
-    <extension>.mvk</extension>
+    <extension>.mkv</extension>
   </serie>
   <serie titulo="Hannibal">
     <titulo>Hannibal</titulo>
@@ -882,8 +882,8 @@
   </serie>
   <serie titulo="Scorpion">
     <titulo>Scorpion</titulo>
-    <temporadaActual>1</temporadaActual>
-    <numeroTemporadas>1</numeroTemporadas>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>D</estado>
     <extension>.mkv</extension>
@@ -1031,7 +1031,7 @@
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
-    <extension>.mvk</extension>
+    <extension>.mkv</extension>
   </serie>
   <serie titulo="The leftovers">
     <titulo>The leftovers</titulo>
@@ -1087,7 +1087,7 @@
     <numeroTemporadas>6</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
-    <extension>.mvk</extension>
+    <extension>.mkv</extension>
   </serie>
   <serie titulo="The Wrong Mans">
     <titulo>The Wrong Mans</titulo>

@@ -168,7 +168,14 @@ namespace MediaFilm
             string nombreOriginal = fi.Name;
             try
             {
-                fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + "0" + cap + ext);
+                if (cap < 10)
+                {
+                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + "0" + cap + ext);
+                }
+                else
+                {
+                    fi.MoveTo(dirSerie + @"\" + titulo + " " + temp + cap + ext);
+                }
                 xmlMediaLog.añadirEntrada(new Log("Renombrado", "Fichero '" + nombreOriginal + "' renombrado a '" + fi.FullName + "'"));
                 return true;
             }
@@ -235,7 +242,7 @@ namespace MediaFilm
                             for (int cap = 1; cap <= itSerie.capitulosPorTemporada; cap++)
                             {
                                 FileInfo fi;
-                                string dirSerie = @config.dirTrabajo + @"\" + itSerie.titulo + @"\Temporada" + temp + @"\";
+                                string dirSerie = @config.dirSeries + @"\" + itSerie.titulo + @"\Temporada" + temp + @"\";
                                 string[] strPatrones = new string[]
                                 {
                                     itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*" + itSerie.extension,

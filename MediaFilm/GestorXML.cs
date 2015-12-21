@@ -37,6 +37,7 @@ namespace MediaFilm
                 config.dirTrabajo = @documento.GetElementsByTagName("dirTrabajo")[0].InnerText;
                 config.ficheroSeries = @documento.GetElementsByTagName("fichSeries")[0].InnerText;
                 config.ficheroPatrones = @documento.GetElementsByTagName("fichPatrones")[0].InnerText;
+                config.dirSeries = @documento.GetElementsByTagName("dirSeries")[0].InnerText;
             }
             return config;
         }

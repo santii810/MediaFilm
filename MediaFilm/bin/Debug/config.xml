@@ -7,4 +7,5 @@
 	<dirTrabajo>A:\Iomega</dirTrabajo>
 	<fichSeries>series.xml</fichSeries>
 	<fichPatrones>patrones.xml</fichPatrones>
+	<dirSeries>A:\Series</dirSeries>
 </Config>

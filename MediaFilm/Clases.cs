@@ -15,6 +15,7 @@ namespace MediaFilm
         public string dirTrabajo { get; set; }     
         public string ficheroSeries { get; set; }
         public string ficheroPatrones { get; set; }
+        public string dirSeries { get; set; }
     }
 
     class Log
