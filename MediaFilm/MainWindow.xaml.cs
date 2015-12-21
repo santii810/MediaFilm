@@ -166,6 +166,8 @@ namespace MediaFilm
         public bool ejecutarMovimiento(FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
         {
             string nombreOriginal = fi.Name;
+            //Crea todos los directorios y subdirectorios en la ruta de acceso especificada, a menos que ya existan.
+            Directory.CreateDirectory(dirSerie);
             try
             {
                 if (cap < 10)
@@ -253,8 +255,10 @@ namespace MediaFilm
 
                                 for (int i = 0; i <= 1; i++)
                                 {
-                                    if (cap >= 10) i += 2;
-                                    fi = obtenerCoincidenciaBusqueda(strPatrones[i]);
+                                    if (cap >= 10) fi = obtenerCoincidenciaBusqueda(strPatrones[i + 2]);
+
+                                    else fi = obtenerCoincidenciaBusqueda(strPatrones[i]);
+
                                     if (fi != null)
                                     {
                                         if (ejecutarMovimiento(fi, dirSerie, itSerie.titulo, temp, cap, itSerie.extension)) videosRenombrados++;
