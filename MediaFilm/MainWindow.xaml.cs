@@ -186,11 +186,9 @@ namespace MediaFilm
             List<String> mens = new List<string>();
             List<String> tmp = new List<string>();
 
-            mens.Add(DateTime.Now.ToString());
-            mens.Add("Videos movidos: " + numerosTorrent[0]);
-            mens.Add("Ficheros borrados: " + numerosTorrent[1]);
-            mens.Add("Error moviendo " + numerosTorrent[2] + " ficheros");
-            mens.Add("Error borrando " + numerosTorrent[3] + " ficheros");
+            mens.Add(DateTime.Now.ToString() + "\tEXTRACCION DE VIDEOS");
+            mens.Add("Videos movidos: " + numerosTorrent[0] + ", errores: " +numerosTorrent[2] );
+            mens.Add("Ficheros borrados: " + numerosTorrent[1] + " errores: " + numerosTorrent[3]);
             mens.Add("Ficheros no soportados: " + numerosTorrent[4]);
             mens.Add("Tiempo de ejecucion: " + numerosTorrent[5] + "ms");
             mens.Add("");
@@ -207,9 +205,8 @@ namespace MediaFilm
             List<String> mens = new List<string>();
             List<String> tmp = new List<string>();
 
-            mens.Add(DateTime.Now.ToString());
-            mens.Add("Videos renombrados: " + numerosRenombrado[0]);
-            mens.Add("Errores renombrando: " + numerosRenombrado[1]);
+            mens.Add(DateTime.Now.ToString() + "\tRENOMBRADO DE VIDEOS");
+            mens.Add("Videos renombrados: " + numerosRenombrado[0] + ", errores: " + numerosRenombrado[1]);
             mens.Add("Videos a falta de renombrar: " + ficherosARenombrar());
             mens.Add("Patrones ejecutados: " + numerosRenombrado[2] + " referentes a " + numerosRenombrado[3] + " series activas");
             mens.Add("Tiempo de ejecucion: " + numerosRenombrado[4] + "ms");
@@ -283,11 +280,10 @@ namespace MediaFilm
                 if (item.Extension.Equals(".mkv") || item.Extension.Equals(".avi") || item.Extension.Equals(".mp4")) retorno++;
             return retorno;
         }
-
-
         //listeners
         private void buttonOrdenaSeries_Click(object sender, RoutedEventArgs e)
         {
+            mensajes.Add(" -");
             MenuItemRecorrerTorrent_Click(new object(), new RoutedEventArgs());
             MenuItemRemonbrar_Click(new object(), new RoutedEventArgs());
         }
