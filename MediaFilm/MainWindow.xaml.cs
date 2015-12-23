@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Windows;
 
@@ -60,6 +61,7 @@ namespace MediaFilm
             int errorBorrando = 0;
             int errorMoviendo = 0;
             int unsuported = 0;
+            Stopwatch tiempo = Stopwatch.StartNew();
 
             DirectoryInfo dir = new DirectoryInfo(config.dirTorrent);
             if (!dir.Exists)
@@ -105,7 +107,8 @@ namespace MediaFilm
                         throw new TipoArchivoNoSoportadoException();
                 }
             }
-            return new int[] { videosMovidos, ficherosBorrados, errorMoviendo, errorBorrando, unsuported };
+            
+            return new int[] { videosMovidos, ficherosBorrados, errorMoviendo, errorBorrando, unsuported ,Convert.ToInt32(tiempo.ElapsedMilliseconds) };
         }
         private bool borrarFichero(FileInfo fichero)
         {
@@ -189,6 +192,7 @@ namespace MediaFilm
             mens.Add("Error moviendo " + numerosTorrent[2] + " ficheros");
             mens.Add("Error borrando " + numerosTorrent[3] + " ficheros");
             mens.Add("Ficheros no soportados: " + numerosTorrent[4]);
+            mens.Add("Tiempo de ejecucion: " + numerosTorrent[5] + "ms");
             mens.Add("");
 
             tmp.AddRange(this.mensajes);
@@ -208,6 +212,7 @@ namespace MediaFilm
             mens.Add("Errores renombrando: " + numerosRenombrado[1]);
             mens.Add("Videos a falta de renombrar: " + ficherosARenombrar());
             mens.Add("Patrones ejecutados: " + numerosRenombrado[2] + " referentes a " + numerosRenombrado[3] + " series activas");
+            mens.Add("Tiempo de ejecucion: " + numerosRenombrado[4] + "ms");
             mens.Add("");
 
             tmp.AddRange(this.mensajes);
@@ -219,6 +224,7 @@ namespace MediaFilm
         }
         private int[] renombrarVideos()
         {
+            Stopwatch tiempo = Stopwatch.StartNew();
             int videosRenombrados = 0;
             int erroresRenombrado = 0;
             int numeroPatrones = 0;
@@ -264,7 +270,7 @@ namespace MediaFilm
                     }
                 }
             }
-            return new int[] { videosRenombrados, erroresRenombrado, numeroPatrones,seriesActivas };
+            return new int[] { videosRenombrados, erroresRenombrado, numeroPatrones,seriesActivas , Convert.ToInt32(tiempo.ElapsedMilliseconds)};
         }
         //Cuenta los fichero con extension de video en el directorio de trabajo
         public int ficherosARenombrar()
