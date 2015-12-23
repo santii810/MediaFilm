@@ -26,3 +26,5 @@ C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MainWindow.baml
 C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.g.resources
 C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.Properties.Resources.resources
 C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.csproj.GenerateResource.Cache
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll

@@ -1,18 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MediaFilm
 {
@@ -63,6 +52,7 @@ namespace MediaFilm
             return retorno;
         }
         //Recorre la carpeta torrent borrando los elementos no necesarios y llevando los ficheros a la carpeta de trabajo
+
         public int[] recorrerTorrent()
         {
             int videosMovidos = 0;
@@ -208,7 +198,6 @@ namespace MediaFilm
             listBox.Items.Clear();
             this.mensajes.ForEach(item => listBox.Items.Add(item));
         }
-
         private void mostrarMensajesRespuestaRenombrado(int[] numerosRenombrado)
         {
             List<String> mens = new List<string>();
@@ -217,6 +206,8 @@ namespace MediaFilm
             mens.Add(DateTime.Now.ToString());
             mens.Add("Videos renombrados: " + numerosRenombrado[0]);
             mens.Add("Errores renombrando: " + numerosRenombrado[1]);
+            mens.Add("Videos a falta de renombrar: " + ficherosARenombrar());
+            mens.Add("Patrones ejecutados: " + numerosRenombrado[2] + " referentes a " + numerosRenombrado[3] + " series activas");
             mens.Add("");
 
             tmp.AddRange(this.mensajes);
@@ -230,6 +221,8 @@ namespace MediaFilm
         {
             int videosRenombrados = 0;
             int erroresRenombrado = 0;
+            int numeroPatrones = 0;
+            int seriesActivas = 0;
             series = xmlSeries.leerSeries();
             series.Sort();
             foreach (Serie itSerie in series)
@@ -237,6 +230,9 @@ namespace MediaFilm
                 if (itSerie.estado.Equals("A"))
                 {
                     itSerie.obtenerPatrones(config);
+                    //calculo de patrones: Numero de patrones de la serie en el xml * temporadas activas de la serie * numero de capitulos de cada temporada * 4 (strings que se comprueban en cada patron)
+                    numeroPatrones += (itSerie.patrones.Count * ((itSerie.numeroTemporadas - itSerie.temporadaActual) + 1) * itSerie.capitulosPorTemporada) * 4;
+                    seriesActivas++;
                     foreach (Patron itPatron in itSerie.patrones)
                     {
                         for (int temp = itSerie.temporadaActual; temp <= itSerie.numeroTemporadas; temp++)
@@ -256,9 +252,7 @@ namespace MediaFilm
                                 for (int i = 0; i <= 1; i++)
                                 {
                                     if (cap >= 10) fi = obtenerCoincidenciaBusqueda(strPatrones[i + 2]);
-
                                     else fi = obtenerCoincidenciaBusqueda(strPatrones[i]);
-
                                     if (fi != null)
                                     {
                                         if (ejecutarMovimiento(fi, dirSerie, itSerie.titulo, temp, cap, itSerie.extension)) videosRenombrados++;
@@ -270,8 +264,20 @@ namespace MediaFilm
                     }
                 }
             }
-            return new int[] { videosRenombrados, erroresRenombrado };
+            return new int[] { videosRenombrados, erroresRenombrado, numeroPatrones,seriesActivas };
         }
+        //Cuenta los fichero con extension de video en el directorio de trabajo
+        public int ficherosARenombrar()
+        {
+            int retorno = 0;
+            DirectoryInfo dir = new DirectoryInfo(config.dirTrabajo);
+            if (!dir.Exists) throw new DirectoryNotFoundException("Directorio de trabajo no encontrado");
+            FileSystemInfo[] filesInfo = dir.GetFileSystemInfos();
+            foreach (FileInfo item in filesInfo)
+                if (item.Extension.Equals(".mkv") || item.Extension.Equals(".avi") || item.Extension.Equals(".mp4")) retorno++;
+            return retorno;
+        }
+
 
         //listeners
         private void buttonOrdenaSeries_Click(object sender, RoutedEventArgs e)
@@ -283,7 +289,6 @@ namespace MediaFilm
         {
             mostrarMensajesRespuestaTorrent(recorrerTorrent());
         }
-
         private void MenuItemRemonbrar_Click(object sender, RoutedEventArgs e)
         {
             mostrarMensajesRespuestaRenombrado(renombrarVideos());
