@@ -187,6 +187,7 @@
   <serie titulo="Scandal">Scandal</serie>
   <serie titulo="Scorpion">Scorpion</serie>
   <serie titulo="Scorpion">Scrp</serie>
+  <serie titulo="Scorpion">Scop</serie>
   <serie titulo="Scorpion">Scorp</serie>
   <serie titulo="Sense 8">Sense 8</serie>
   <serie titulo="Sense 8">Sense.8</serie>
@@ -262,4 +263,8 @@
   <serie titulo="The last ship">TLS</serie>
   <serie titulo="The Walking Dead">TWD</serie>
   <serie titulo="The Walking Dead">TVVD</serie>
+  <serie titulo="Transparent">Tran</serie>
+  <serie titulo="Into the badlands">Into the badlands</serie>
+  <serie titulo="Into the badlands">ITB</serie>
+  <serie titulo="Into the badlands">Into.the.badlands</serie>
 </raiz>

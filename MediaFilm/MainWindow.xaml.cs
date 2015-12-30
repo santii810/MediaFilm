@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Windows;
 
 namespace MediaFilm
@@ -52,8 +53,8 @@ namespace MediaFilm
             }
             return retorno;
         }
-        //Recorre la carpeta torrent borrando los elementos no necesarios y llevando los ficheros a la carpeta de trabajo
 
+        //Recorre la carpeta torrent borrando los elementos no necesarios y llevando los ficheros a la carpeta de trabajo
         public int[] recorrerTorrent()
         {
             int videosMovidos = 0;
@@ -61,6 +62,7 @@ namespace MediaFilm
             int errorBorrando = 0;
             int errorMoviendo = 0;
             int unsuported = 0;
+            int directoriosBorrados = 0;
             Stopwatch tiempo = Stopwatch.StartNew();
 
             DirectoryInfo dir = new DirectoryInfo(config.dirTorrent);
@@ -107,8 +109,9 @@ namespace MediaFilm
                         throw new TipoArchivoNoSoportadoException();
                 }
             }
-            
-            return new int[] { videosMovidos, ficherosBorrados, errorMoviendo, errorBorrando, unsuported ,Convert.ToInt32(tiempo.ElapsedMilliseconds) };
+            directoriosBorrados = borrarDirectoriosVacios(config.dirTorrent);
+            Directory.CreateDirectory(config.dirTorrent);
+            return new int[] { videosMovidos, ficherosBorrados, errorMoviendo, errorBorrando, unsuported, Convert.ToInt32(tiempo.ElapsedMilliseconds), directoriosBorrados };
         }
         private bool borrarFichero(FileInfo fichero)
         {
@@ -187,9 +190,14 @@ namespace MediaFilm
             List<String> tmp = new List<string>();
 
             mens.Add(DateTime.Now.ToString() + "\tEXTRACCION DE VIDEOS");
-            mens.Add("Videos movidos: " + numerosTorrent[0] + ", errores: " +numerosTorrent[2] );
-            mens.Add("Ficheros borrados: " + numerosTorrent[1] + " errores: " + numerosTorrent[3]);
-            mens.Add("Ficheros no soportados: " + numerosTorrent[4]);
+            if (numerosTorrent[0] != 0 || numerosTorrent[2] != 0)
+                mens.Add("Videos movidos: " + numerosTorrent[0] + ", errores: " + numerosTorrent[2]);
+            if (numerosTorrent[1] != 0 || numerosTorrent[3] != 0)
+                mens.Add("Ficheros borrados: " + numerosTorrent[1] + " errores: " + numerosTorrent[3]);
+            if (numerosTorrent[4] != 0)
+                mens.Add("Ficheros no soportados: " + numerosTorrent[4]);
+            if (numerosTorrent[6] != 0)
+                mens.Add("Borrados " + numerosTorrent[6] + " directorios vacios");
             mens.Add("Tiempo de ejecucion: " + numerosTorrent[5] + "ms");
             mens.Add("");
 
@@ -206,8 +214,10 @@ namespace MediaFilm
             List<String> tmp = new List<string>();
 
             mens.Add(DateTime.Now.ToString() + "\tRENOMBRADO DE VIDEOS");
-            mens.Add("Videos renombrados: " + numerosRenombrado[0] + ", errores: " + numerosRenombrado[1]);
-            mens.Add("Videos a falta de renombrar: " + ficherosARenombrar());
+            if (numerosRenombrado[0] != 0 || numerosRenombrado[1] != 0)
+                mens.Add("Videos renombrados: " + numerosRenombrado[0] + ", errores: " + numerosRenombrado[1]);
+            if (contarFicherosARenombrar() != 0)
+                mens.Add("Videos a falta de renombrar: " + contarFicherosARenombrar());
             mens.Add("Patrones ejecutados: " + numerosRenombrado[2] + " referentes a " + numerosRenombrado[3] + " series activas");
             mens.Add("Tiempo de ejecucion: " + numerosRenombrado[4] + "ms");
             mens.Add("");
@@ -267,10 +277,10 @@ namespace MediaFilm
                     }
                 }
             }
-            return new int[] { videosRenombrados, erroresRenombrado, numeroPatrones,seriesActivas , Convert.ToInt32(tiempo.ElapsedMilliseconds)};
+            return new int[] { videosRenombrados, erroresRenombrado, numeroPatrones, seriesActivas, Convert.ToInt32(tiempo.ElapsedMilliseconds) };
         }
         //Cuenta los fichero con extension de video en el directorio de trabajo
-        public int ficherosARenombrar()
+        private int contarFicherosARenombrar()
         {
             int retorno = 0;
             DirectoryInfo dir = new DirectoryInfo(config.dirTrabajo);
@@ -280,10 +290,39 @@ namespace MediaFilm
                 if (item.Extension.Equals(".mkv") || item.Extension.Equals(".avi") || item.Extension.Equals(".mp4")) retorno++;
             return retorno;
         }
+        //borra los directorios vacios en la ruta proporcionada
+        private int borrarDirectoriosVacios(string dir)
+        {
+            int retorno = 0;
+            if (String.IsNullOrEmpty(dir))
+                throw new ArgumentException(
+                    "Starting directory is a null reference or an empty string", "dir");
+            try
+            {
+                foreach (var d in Directory.EnumerateDirectories(dir))
+                {
+                    retorno += borrarDirectoriosVacios(d);
+                }
+
+                var entries = Directory.EnumerateFileSystemEntries(dir);
+
+                if (!entries.Any())
+                {
+                    try
+                    {
+                        Directory.Delete(dir);
+                        retorno++;
+                    }
+                    catch (UnauthorizedAccessException) { }
+                    catch (DirectoryNotFoundException) { }
+                }
+            }
+            catch (UnauthorizedAccessException) { }
+            return retorno;
+        }
         //listeners
         private void buttonOrdenaSeries_Click(object sender, RoutedEventArgs e)
         {
-            mensajes.Add(" -");
             MenuItemRecorrerTorrent_Click(new object(), new RoutedEventArgs());
             MenuItemRemonbrar_Click(new object(), new RoutedEventArgs());
         }

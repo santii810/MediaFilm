@@ -272,6 +272,14 @@
     <estado>F</estado>
     <extension>.avi</extension>
   </serie>
+  <serie titulo="Da Vinci demons">
+    <titulo>Da Vinci demons</titulo>
+    <temporadaActual>3</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
   <serie titulo="Defiance">
     <titulo>Defiance</titulo>
     <temporadaActual>1</temporadaActual>
@@ -558,6 +566,14 @@
     <numeroTemporadas>1</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>D</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Into the badlands">
+    <titulo>Into the badlands</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="Invisible">
@@ -1022,8 +1038,9 @@
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>D</estado>
-    <extension>.mkv
-</extension>
+    <extension>
+      .mkv
+    </extension>
   </serie>
   <serie titulo="The last ship">
     <titulo>The last ship</titulo>
@@ -1097,6 +1114,14 @@
     <estado>D</estado>
     <extension>.avi</extension>
   </serie>
+  <serie titulo="Transparent">
+    <titulo>Transparent</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
   <serie titulo="Transporter">
     <titulo>Transporter</titulo>
     <temporadaActual>1</temporadaActual>
@@ -1153,14 +1178,7 @@
     <estado>D</estado>
     <extension>.avi</extension>
   </serie>
-  <serie titulo="Da Vinci demons">
-    <titulo>Da Vinci demons</titulo>
-    <temporadaActual>3</temporadaActual>
-    <numeroTemporadas>3</numeroTemporadas>
-    <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>A</estado>
-    <extension>.mkv</extension>
-  </serie>
+
   <serie titulo="Wilfred">
     <titulo>Wilfred</titulo>
     <temporadaActual>2</temporadaActual>
@@ -1169,5 +1187,5 @@
     <estado>F</estado>
     <extension>.avi</extension>
   </serie>
- 
+
 </Series>
