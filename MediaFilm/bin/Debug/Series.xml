@@ -312,6 +312,14 @@
     <estado>F</estado>
     <extension>.avi</extension>
   </serie>
+  <serie titulo="Dos chicas sin blanca">
+    <titulo>Dos chicas sin blanca</titulo>
+    <temporadaActual>5</temporadaActual>
+    <numeroTemporadas>5</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
   <serie titulo="El mentalista">
     <titulo>El mentalista</titulo>
     <temporadaActual>4</temporadaActual>
@@ -738,11 +746,11 @@
   </serie>
   <serie titulo="Mozart in the jungle">
     <titulo>Mozart in the jungle</titulo>
-    <temporadaActual>1</temporadaActual>
-    <numeroTemporadas>1</numeroTemporadas>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>D</estado>
-    <extension>.mkv</extension>
+    <estado>A</estado>
+    <extension>.avi</extension>
   </serie>
   <serie titulo="Mr selfridge">
     <titulo>Mr selfridge</titulo>
@@ -847,6 +855,14 @@
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>D</estado>
     <extension>.mkv</extension>
+  </serie>
+    <serie titulo="Recien llegados">
+    <titulo>Recien llegados</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
   </serie>
   <serie titulo="Refugiados">
     <titulo>Refugiados</titulo>
@@ -1042,13 +1058,23 @@
       .mkv
     </extension>
   </serie>
-  <serie titulo="The last ship">
-    <titulo>The last ship</titulo>
+  <serie titulo="The Following">
+    <titulo>The Following</titulo>
     <temporadaActual>2</temporadaActual>
     <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>D</estado>
+    <extension>
+      .mkv
+    </extension>
+  </serie>
+  <serie titulo="The frankenstein chronicles">
+    <titulo>The frankenstein chronicles</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
-    <extension>.mkv</extension>
+    <extension>.avi</extension>
   </serie>
   <serie titulo="The leftovers">
     <titulo>The leftovers</titulo>

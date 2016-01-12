@@ -69,6 +69,10 @@
   <serie titulo="Defiance">Defiance</serie>
   <serie titulo="Dexter">Dexter</serie>
   <serie titulo="Dominion">Dominion</serie>
+  <serie titulo="Dos chicas sin blanca">2chicas sin blanca</serie>
+  <serie titulo="Dos chicas sin blanca">2chicas.sin.blanca</serie>
+  <serie titulo="Dos chicas sin blanca">2.chicas.sin.blanca</serie>
+  <serie titulo="Dos chicas sin blanca">Dos.chicas.sin.blanca</serie>
   <serie titulo="Dos hombres y medio">Dos hombres y medio</serie>
   <serie titulo="Dos hombres y medio">Dos.hombres.y.medio</serie>
   <serie titulo="El mentalista">El mentalista</serie>
@@ -154,6 +158,7 @@
   <serie titulo="Modern Family">Modern Family</serie>
   <serie titulo="Modern Family">Modern.Family</serie>
   <serie titulo="Mom">Mom</serie>
+  <serie titulo="Mozart in the jungle">Mitju</serie>
   <serie titulo="Mozart in the jungle">Mozart in the jungle</serie>
   <serie titulo="Mozart in the jungle">Mozart.in.the.jungle</serie>
   <serie titulo="Mr selfridge">Mr selfridge</serie>
@@ -178,6 +183,8 @@
   <serie titulo="Ray Donovan">Ray.Donovan</serie>
   <serie titulo="Real humans">Real humans</serie>
   <serie titulo="Real humans">Real.humans</serie>
+  <serie titulo="Recien llegados">Recien llegados</serie>
+  <serie titulo="Recien llegados">Recien.llegados</serie>
   <serie titulo="Refugiados">Refugiados</serie>
   <serie titulo="Rehenes">Rehenes</serie>
   <serie titulo="Residue">Residue</serie>
@@ -206,6 +213,7 @@
   <serie titulo="The Americans">The Americans</serie>
   <serie titulo="The Americans">The.Americans</serie>
   <serie titulo="The big bang theory">The big bang theory</serie>
+  <serie titulo="The big bang theory">TBBT</serie>
   <serie titulo="The big bang theory">The.big.bang.theory</serie>
   <serie titulo="The blacklist">The blacklist</serie>
   <serie titulo="The blacklist">The.blacklist</serie>
@@ -220,6 +228,8 @@
   <serie titulo="The crazy ones">The.crazy.ones</serie>
   <serie titulo="The Flash">The Flash</serie>
   <serie titulo="The Flash">The.Flash</serie>
+  <serie titulo="The frankenstein chronicles">The frankenstein chronicles</serie>
+  <serie titulo="The frankenstein chronicles">The.frankenstein.chronicles</serie>
   <serie titulo="The Following">The Following</serie>
   <serie titulo="The Following">The.Following</serie>
   <serie titulo="The last ship">The last ship</serie>
@@ -264,7 +274,8 @@
   <serie titulo="The Walking Dead">TWD</serie>
   <serie titulo="The Walking Dead">TVVD</serie>
   <serie titulo="Transparent">Tran</serie>
-  <serie titulo="Into the badlands">Into the badlands</serie>
+  <serie titulo="Into the badlands">Into the badlands</serie> 
+  <serie titulo="Into the badlands">Intbdlan</serie>
   <serie titulo="Into the badlands">ITB</serie>
   <serie titulo="Into the badlands">Into.the.badlands</serie>
 </raiz>
