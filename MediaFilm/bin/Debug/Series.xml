@@ -616,6 +616,14 @@
     <estado>F</estado>
     <extension>.avi</extension>
   </serie>
+  <serie titulo="Las cronicas de shanara">
+    <titulo>Las cronicas de shanara</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>4</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
   <serie titulo="Legends">
     <titulo>Legends</titulo>
     <temporadaActual>1</temporadaActual>
@@ -928,12 +936,12 @@
     <estado>D</estado>
     <extension>.mkv</extension>
   </serie>
-  <serie titulo="Shameless">
-    <titulo>Shameless</titulo>
+  <serie titulo="ShadownHunters">
+    <titulo>ShadownHunters</titulo>
     <temporadaActual>1</temporadaActual>
-    <numeroTemporadas>3</numeroTemporadas>
+    <numeroTemporadas>1</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>F</estado>
+    <estado>A</estado>
     <extension>.avi</extension>
   </serie>
   <serie titulo="Silicon Valley">
@@ -1074,7 +1082,7 @@
     <numeroTemporadas>1</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
     <estado>A</estado>
-    <extension>.avi</extension>
+    <extension>.mkv</extension>
   </serie>
   <serie titulo="The leftovers">
     <titulo>The leftovers</titulo>
@@ -1118,11 +1126,11 @@
   </serie>
   <serie titulo="The strain">
     <titulo>The strain</titulo>
-    <temporadaActual>1</temporadaActual>
-    <numeroTemporadas>1</numeroTemporadas>
+    <temporadaActual>2</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>D</estado>
-    <extension>.mkv</extension>
+    <estado>A</estado>
+    <extension>.avi</extension>
   </serie>
   <serie titulo="The Walking Dead">
     <titulo>The Walking Dead</titulo>
