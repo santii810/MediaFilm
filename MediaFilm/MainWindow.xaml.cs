@@ -36,7 +36,11 @@ namespace MediaFilm
         #endregion
 
         #region Metodos privados sencillos
-        //funcion recursiva que devuelve todos los ficheros dentro de la carpeta y subcarpeta enviada como parametro
+         /// <summary>
+        /// funcion recursiva que devuelve todos los ficheros dentro de la carpeta.
+        /// </summary>
+        /// <param name="filesInfo">The files information.</param>
+        /// <returns></returns>
         public List<FileInfo> listarFicheros(FileSystemInfo[] filesInfo)
         {
             List<FileInfo> retorno = new List<FileInfo>();
@@ -55,7 +59,11 @@ namespace MediaFilm
             }
             return retorno;
         }
-        //Recorre la carpeta torrent borrando los elementos no necesarios y llevando los ficheros a la carpeta de trabajo
+        /// <summary>
+        /// Borra el fichero enviado como parametro.
+        /// </summary>
+        /// <param name="fichero">Fichero a borrar.</param>
+        /// <returns></returns>
         private bool borrarFichero(FileInfo fichero)
         {
             string nombreFichero = fichero.Name;
@@ -71,6 +79,11 @@ namespace MediaFilm
                 return false;
             }
         }
+        /// <summary>
+        /// Mueve el fichero enviado como parametro al directorio de trabajo seleccionado en la configuracion.
+        /// </summary>
+        /// <param name="fichero">The fichero.</param>
+        /// <returns></returns>
         private bool moverFichero(FileInfo fichero)
         {
             string nombreFichero = fichero.Name;
@@ -87,7 +100,12 @@ namespace MediaFilm
                 return false;
             }
         }
-        
+        /// <summary>
+        /// Busca en el directorio de trabajo si existe algun fichero que coincida con el patron enviado.
+        /// </summary>
+        /// <param name="pat">Patron a buscar</param>
+        /// <returns>FileInfo del fichero si hay coincidencias</returns>
+        /// <exception cref="TooManySerieCoincidencesException"></exception>
         public FileInfo obtenerCoincidenciaBusqueda(string pat)
         {
             DirectoryInfo iomegaInfo = new DirectoryInfo(config.dirTrabajo);
@@ -103,9 +121,11 @@ namespace MediaFilm
             }
             return null;
         }
-        //muestra en el listbox un mensaje con las acciones realizadas por recorrer torrent
-
-        //Cuenta los fichero con extension de video en el directorio de trabajo
+        /// <summary>
+        /// Cuenta los ficheros de tipo video que hay en el directorio de trabajo.
+        /// </summary>
+        /// <returns>Numero de ficheros con extension de video en el directorio de trabajo</returns>
+        /// <exception cref="DirectoryNotFoundException">Directorio de trabajo no encontrado</exception>
         private int contarFicherosARenombrar()
         {
             int retorno = 0;
@@ -116,7 +136,12 @@ namespace MediaFilm
                 if (item.Extension.Equals(".mkv") || item.Extension.Equals(".avi") || item.Extension.Equals(".mp4")) retorno++;
             return retorno;
         }
-        //borra los directorios vacios en la ruta proporcionada
+        /// <summary>
+        /// Borra todos los directorios vacios de la ruta proporcionada, asi como el propio directorio.
+        /// </summary>
+        /// <param name="dir">El directorio.</param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentException">Starting directory is a null reference or an empty</exception>
         private int borrarDirectoriosVacios(string dir)
         {
             int retorno = 0;
@@ -148,7 +173,14 @@ namespace MediaFilm
         }
         #endregion
 
+
         #region Metodos privados complejos
+        /// <summary>
+        /// Recorre la carpeta torrent borrando los elementos no necesarios y llevando los ficheros a la carpeta de trabajo.
+        /// </summary>
+        /// <returns></returns>
+        /// <exception cref="DirectoryNotFoundException">Directorio de descargas no encontrado</exception>
+        /// <exception cref="TipoArchivoNoSoportadoException"></exception>
         public int[] recorrerTorrent()
         {
             int videosMovidos = 0;
@@ -207,6 +239,10 @@ namespace MediaFilm
             Directory.CreateDirectory(config.dirTorrent);
             return new int[] { videosMovidos, ficherosBorrados, errorMoviendo, errorBorrando, unsuported, Convert.ToInt32(tiempo.ElapsedMilliseconds), directoriosBorrados };
         }
+        /// <summary>
+        /// Recorre el Directorio de trabajo buscando coincidencias y renombrando dichas concidencias.
+        /// </summary>
+        /// <returns>Retorna el array de numeros necesario para mostrar los mensajes en consola</returns>
         private int[] renombrarVideos()
         {
             Stopwatch tiempo = Stopwatch.StartNew();
@@ -257,6 +293,16 @@ namespace MediaFilm
             }
             return new int[] { videosRenombrados, erroresRenombrado, numeroPatrones, seriesActivas, Convert.ToInt32(tiempo.ElapsedMilliseconds) };
         }
+        /// <summary>
+        /// Mueve los ficheros.
+        /// </summary>
+        /// <param name="fi">Fichero a mover</param>
+        /// <param name="dirSerie">Directorio de destino</param>
+        /// <param name="titulo">Titulo del fichero.</param>
+        /// <param name="temp">The temporada.</param>
+        /// <param name="cap">The capitulo.</param>
+        /// <param name="ext">The extension.</param>
+        /// <returns> Retorna true si el movimiento se realiza correctamente</returns>
         public bool ejecutarMovimiento(FileInfo fi, string dirSerie, string titulo, int temp, int cap, string ext)
         {
             string nombreOriginal = fi.Name;
@@ -346,7 +392,6 @@ namespace MediaFilm
         {
             mostrarMensajesRespuestaRenombrado(renombrarVideos());
         }
-
         private void MenuItemAñadirSerie_Click(object sender, RoutedEventArgs e)
         {
 
