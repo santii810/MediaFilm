@@ -13,6 +13,11 @@
                 </MenuItem>
                 <MenuItem Header="_Renombrar videos" Name="MenuItemRemonbrar" Click="MenuItemRemonbrar_Click"></MenuItem>
             </MenuItem>
+            <MenuItem Header="_Añadir" >
+                <MenuItem Header="_Añadir serie" Name="MenuItemAñadirSerie" Click="MenuItemAñadirSerie_Click">
+                </MenuItem>
+                <MenuItem Header="_Añadir Patron" Name="MenuItemAñadirPatron" Click="MenuItemAñadirPatron_Click"></MenuItem>
+            </MenuItem>
 
         </Menu>
         <Button x:Name="buttonOrdenaSeries" Content="Ordena series" HorizontalAlignment="Left" Height="42" Margin="10,30,0,0" VerticalAlignment="Top" Width="81" Click="buttonOrdenaSeries_Click"/>

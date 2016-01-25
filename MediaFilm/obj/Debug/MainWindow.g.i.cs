@@ -57,7 +57,23 @@ namespace MediaFilm {
         #line hidden
         
         
-        #line 18 "..\..\MainWindow.xaml"
+        #line 17 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem MenuItemAñadirSerie;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 19 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal System.Windows.Controls.MenuItem MenuItemAñadirPatron;
+        
+        #line default
+        #line hidden
+        
+        
+        #line 23 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button buttonOrdenaSeries;
         
@@ -65,7 +81,7 @@ namespace MediaFilm {
         #line hidden
         
         
-        #line 19 "..\..\MainWindow.xaml"
+        #line 24 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ListBox listBox;
         
@@ -121,15 +137,33 @@ namespace MediaFilm {
             #line hidden
             return;
             case 3:
-            this.buttonOrdenaSeries = ((System.Windows.Controls.Button)(target));
+            this.MenuItemAñadirSerie = ((System.Windows.Controls.MenuItem)(target));
             
-            #line 18 "..\..\MainWindow.xaml"
-            this.buttonOrdenaSeries.Click += new System.Windows.RoutedEventHandler(this.buttonOrdenaSeries_Click);
+            #line 17 "..\..\MainWindow.xaml"
+            this.MenuItemAñadirSerie.Click += new System.Windows.RoutedEventHandler(this.MenuItemAñadirSerie_Click);
             
             #line default
             #line hidden
             return;
             case 4:
+            this.MenuItemAñadirPatron = ((System.Windows.Controls.MenuItem)(target));
+            
+            #line 19 "..\..\MainWindow.xaml"
+            this.MenuItemAñadirPatron.Click += new System.Windows.RoutedEventHandler(this.MenuItemAñadirPatron_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 5:
+            this.buttonOrdenaSeries = ((System.Windows.Controls.Button)(target));
+            
+            #line 23 "..\..\MainWindow.xaml"
+            this.buttonOrdenaSeries.Click += new System.Windows.RoutedEventHandler(this.buttonOrdenaSeries_Click);
+            
+            #line default
+            #line hidden
+            return;
+            case 6:
             this.listBox = ((System.Windows.Controls.ListBox)(target));
             return;
             }

@@ -28,3 +28,6 @@ C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.Properties.
 C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.csproj.GenerateResource.Cache
 C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\bin\Debug\MediaFilm.exe.config
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.exe
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.pdb
