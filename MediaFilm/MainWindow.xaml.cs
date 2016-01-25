@@ -10,7 +10,7 @@ namespace MediaFilm
     public partial class MainWindow : Window
     {
 
-        #region variables globales
+        #region Variables globales
         //acceso a datos
         private ConfigXML xmlConfig = new ConfigXML();
         private LoggerXML xmlMediaLog;
@@ -24,7 +24,7 @@ namespace MediaFilm
         List<String> mensajes = new List<string>();
         #endregion
 
-        #region main
+        #region Main
         public MainWindow()
         {
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace MediaFilm
         #endregion
 
         #region Metodos privados sencillos
-         /// <summary>
+        /// <summary>
         /// funcion recursiva que devuelve todos los ficheros dentro de la carpeta.
         /// </summary>
         /// <param name="filesInfo">The files information.</param>
@@ -173,7 +173,6 @@ namespace MediaFilm
         }
         #endregion
 
-
         #region Metodos privados complejos
         /// <summary>
         /// Recorre la carpeta torrent borrando los elementos no necesarios y llevando los ficheros a la carpeta de trabajo.
@@ -270,19 +269,27 @@ namespace MediaFilm
                                 string dirSerie = @config.dirSeries + @"\" + itSerie.titulo + @"\Temporada" + temp + @"\";
                                 string[] strPatrones = new string[]
                                 {
-                                    itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*" + itSerie.extension,
-                                    itPatron.textoPatron + "*" + temp.ToString() + "x0" + cap.ToString() + "*" + itSerie.extension,
-                                    itPatron.textoPatron + "*" + temp.ToString() + cap.ToString() + "*" + itSerie.extension,
-                                    itPatron.textoPatron + "*" + temp.ToString() + "x" + cap.ToString() + "*" + itSerie.extension
-                                };
+                                    //patrones para capitulos<10  y extension == mkv
+                                    itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*.mkv" ,
+                                    itPatron.textoPatron + "*" + temp.ToString() + "x0" + cap.ToString() + "*.mkv" ,
+                                    //patrones para capitulos<10  y extension == avi
+                                    itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*.avi" ,
+                                    itPatron.textoPatron + "*" + temp.ToString() + "x0" + cap.ToString() + "*.avi" ,
+                                    //patrones para capitulos>10  y extension == mkv
+                                    itPatron.textoPatron + "*" + temp.ToString() + cap.ToString() + "*.mkv",
+                                    itPatron.textoPatron + "*" + temp.ToString() + "x" + cap.ToString() + "*.mkv",
+                                    //patrones para capitulos>10  y extension == avi
+                                    itPatron.textoPatron + "*" + temp.ToString() + cap.ToString() + "*.avi",
+                                    itPatron.textoPatron + "*" + temp.ToString() + "x" + cap.ToString() + "*.avi"
+                              };
 
-                                for (int i = 0; i <= 1; i++)
+                                for (int i = 0; i <= 3; i++)
                                 {
-                                    if (cap >= 10) fi = obtenerCoincidenciaBusqueda(strPatrones[i + 2]);
+                                    if (cap >= 10) fi = obtenerCoincidenciaBusqueda(strPatrones[i + 4]);
                                     else fi = obtenerCoincidenciaBusqueda(strPatrones[i]);
                                     if (fi != null)
                                     {
-                                        if (ejecutarMovimiento(fi, dirSerie, itSerie.titulo, temp, cap, itSerie.extension)) videosRenombrados++;
+                                        if (ejecutarMovimiento(fi, dirSerie, itSerie.titulo, temp, cap, fi.Extension)) videosRenombrados++;
                                         else erroresRenombrado++;
                                     }
                                 }
@@ -327,7 +334,6 @@ namespace MediaFilm
                 return false;
             }
         }
-
         #endregion
 
         #region Mensajes
@@ -378,7 +384,7 @@ namespace MediaFilm
         }
         #endregion
 
-        #region listeners
+        #region Listeners
         private void buttonOrdenaSeries_Click(object sender, RoutedEventArgs e)
         {
             MenuItemRecorrerTorrent_Click(new object(), new RoutedEventArgs());
