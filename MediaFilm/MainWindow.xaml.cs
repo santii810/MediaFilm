@@ -255,9 +255,9 @@ namespace MediaFilm
             {
                 if (itSerie.estado.Equals("A"))
                 {
-                    itSerie.obtenerPatrones(config);
-                    //calculo de patrones: Numero de patrones de la serie en el xml * temporadas activas de la serie * numero de capitulos de cada temporada * 4 (strings que se comprueban en cada patron)
-                    numeroPatrones += (itSerie.patrones.Count * ((itSerie.numeroTemporadas - itSerie.temporadaActual) + 1) * itSerie.capitulosPorTemporada) * 4;
+                    itSerie.getPatrones(config);
+                    //calculo de patrones: Numero de patrones de la serie en el xml * temporadas activas de la serie * numero de capitulos de cada temporada * 8 (strings que se comprueban en cada patron)
+                    numeroPatrones += (itSerie.patrones.Count * ((itSerie.numeroTemporadas - itSerie.temporadaActual) + 1) * itSerie.capitulosPorTemporada) * 8;
                     seriesActivas++;
                     foreach (Patron itPatron in itSerie.patrones)
                     {
@@ -402,8 +402,64 @@ namespace MediaFilm
         {
 
         }
+        private void MenuItemAñadirPatron_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
+
+        private void MenuItemRevisarExtension_Click(object sender, RoutedEventArgs e)
+        {
+            revisarExtension();
+        }
+        private void MenuItemBuscarIntrusos_Click(object sender, RoutedEventArgs e)
+        {
+            List<FileInfo> intrusos = buscarIntrusos();
+        }
+
+
+
+        private void revisarExtension()
+        {
+            //obtengo cada directorio de la carpeta series, es decir el nombre de las series
+            DirectoryInfo[] dirInfoSeries = new DirectoryInfo(config.dirSeries).GetDirectories();
+            foreach (DirectoryInfo dirSerie in dirInfoSeries)
+            {
+                string nombreSerie = dirSerie.Name;
+                foreach (DirectoryInfo dirTemporada in dirSerie.GetDirectories())
+                {
+                    FileInfo[] ficheros = dirTemporada.GetFiles();
+
+
+
+
+                }
+            }
+        }
+        private List<FileInfo> buscarIntrusos()
+        {
+            List<FileInfo> retorno = new List<FileInfo>();
+            //obtengo cada directorio de la carpeta series, es decir el nombre de las series
+            DirectoryInfo[] dirInfoSeries = new DirectoryInfo(config.dirSeries).GetDirectories();
+            foreach (DirectoryInfo dirSerie in dirInfoSeries)
+            {
+                Serie serie = xmlSeries.buscarSerie(dirSerie.Name);
+                foreach (DirectoryInfo dirTemporada in dirSerie.GetDirectories())
+                {
+                    FileInfo[] ficheros = dirTemporada.GetFiles();
+                    foreach (FileInfo video in ficheros)
+                    {
+                        if (!video.Extension.Equals(serie.extension))
+                        {
+                            retorno.Add(video);
+                        }
+                    }
+                }
+            }
+            return retorno;
+        }
 
     }
     #endregion
+
+
 }

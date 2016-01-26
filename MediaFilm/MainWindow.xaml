@@ -18,6 +18,11 @@
                 </MenuItem>
                 <MenuItem Header="_Añadir Patron" Name="MenuItemAñadirPatron" Click="MenuItemAñadirPatron_Click"></MenuItem>
             </MenuItem>
+            <MenuItem Header="_Mantenimiento" >
+                <MenuItem Header="_Revisar extension" Name="MenuItemRevisarExtension" Click="MenuItemRevisarExtension_Click">
+                </MenuItem>
+               
+            </MenuItem>
 
         </Menu>
         <Button x:Name="buttonOrdenaSeries" Content="Ordena series" HorizontalAlignment="Left" Height="42" Margin="10,30,0,0" VerticalAlignment="Top" Width="81" Click="buttonOrdenaSeries_Click"/>

@@ -140,6 +140,27 @@ namespace MediaFilm
             }
             return series;
         }
+        public Serie buscarSerie()
+        {
+            Serie serie = new Serie();
+            if (cargarXML())
+            {
+                foreach (XmlNode item in documento.GetElementsByTagName("serie"))
+                {
+                    serie.Add(new Serie
+                    {
+                        titulo = item["titulo"].InnerText.ToString(),
+                        temporadaActual = Convert.ToInt32(item["temporadaActual"].InnerText.ToString()),
+                        numeroTemporadas = Convert.ToInt32(item["numeroTemporadas"].InnerText.ToString()),
+                        capitulosPorTemporada = Convert.ToInt32(item["capitulosPorTemporada"].InnerText.ToString()),
+                        estado = item["estado"].InnerText,
+                        extension = item["extension"].InnerText
+                    });
+                }
+            }
+            return serie;
+        }
+
         public void añadirSerie(Serie serie)
         {
             documento = new XmlDocument();

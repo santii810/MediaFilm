@@ -31,3 +31,16 @@ C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\bin\Debug\es\Microsoft.VisualSt
 C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\bin\Debug\MediaFilm.exe.config
 C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.exe
 C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.pdb
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\bin\Debug\MediaFilm.exe
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\bin\Debug\MediaFilm.pdb
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.csprojResolveAssemblyReference.cache
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MainWindow.g.cs
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\App.g.cs
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm_MarkupCompile.cache
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm_MarkupCompile.lref
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MainWindow.baml
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.g.resources
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.Properties.Resources.resources
+C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.csproj.GenerateResource.Cache

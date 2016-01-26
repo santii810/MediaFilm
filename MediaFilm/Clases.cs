@@ -46,7 +46,7 @@ namespace MediaFilm
         {
             this.patrones.Add(pat);
         }
-        public void obtenerPatrones(Config config)
+        public void getPatrones(Config config)
         {
            PatronesXML xmlPat = new PatronesXML(config);
             patrones = xmlPat.leerPatrones(titulo);
