@@ -12,12 +12,22 @@
             <ColumnDefinition Width="401*"/>
         </Grid.ColumnDefinitions>
         <Label x:Name="label" Content="Nombre" HorizontalAlignment="Left" Height="40" Margin="70,48,0,0" VerticalAlignment="Top" Width="132"/>
-        
-        <TextBox x:Name="textBox_NombreSerie" HorizontalAlignment="Left" Height="35" Margin="202,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"/>
+
+        <TextBox x:Name="textBox_NombreSerie" HorizontalAlignment="Left" Height="35" Margin="202,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" TextChanged="textBox_NombreSerie_TextChanged_1" />
         <Label x:Name="label_Copy" Content="Extension" HorizontalAlignment="Left" Height="40" Margin="70,88,0,0" VerticalAlignment="Top" Width="132"/>
         <Label x:Name="label_Copy1" Content="Temporadas" HorizontalAlignment="Left" Height="40" Margin="70,128,0,0" VerticalAlignment="Top" Width="132"/>
         <Label x:Name="label_Copy2" Content="Capitulos temporada" HorizontalAlignment="Left" Height="40" Margin="70,168,0,0" VerticalAlignment="Top" Width="132"/>
         <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="30" Margin="202,93,0,0" VerticalAlignment="Top" Width="183"/>
+        <StackPanel Orientation="Horizontal" Margin="202,128,15,450">
+            <TextBox x:Name="textBoxTemporadas" x:FieldModifier="private" Margin="5,5,0,5" Width="115" Text="0" TextChanged="textBoxTemporadas_TextChanged" />
+            <Button x:Name="temporadasUp" x:FieldModifier="private" Margin="5,5,0,5" Content="˄" Width="20" Click="temporadasUp_Click" />
+            <Button x:Name="temporadasDown" x:FieldModifier="private" Margin="0,5,0,5"  Content="˅" Width="20" Click="temporadasDown_Click" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="202,163,15,415">
+            <TextBox x:Name="textBoxCapitulos" x:FieldModifier="private" Margin="5,5,0,5" Width="115" Text="0" TextChanged="textBoxCapitulos_TextChanged" />
+            <Button x:Name="capitulosUp" x:FieldModifier="private" Margin="5,5,0,5" Content="˄" Width="20" Click="capitulosUp_Click" />
+            <Button x:Name="capitulosDown" x:FieldModifier="private" Margin="0,5,0,5"  Content="˅" Width="20" Click="CapitulosDown_Click" />
+        </StackPanel>
         <Slider x:Name="slider" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
     </Grid>

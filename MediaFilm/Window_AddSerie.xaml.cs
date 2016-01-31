@@ -19,9 +19,55 @@ namespace MediaFilm
     /// </summary>
     public partial class Window_AddSerie : Window
     {
+
+        public int temporadas;
+        public int capitulos;
         public Window_AddSerie()
         {
             InitializeComponent();
+        }
+
+
+
+        private void temporadasUp_Click(object sender, RoutedEventArgs e)
+        {
+            temporadas++;
+            this.textBoxTemporadas.Text = temporadas.ToString();
+        }
+
+        private void capitulosUp_Click(object sender, RoutedEventArgs e)
+        {
+            capitulos++;
+            this.textBoxCapitulos.Text = capitulos.ToString();
+
+        }
+
+        private void CapitulosDown_Click(object sender, RoutedEventArgs e)
+        {
+            capitulos--;
+            this.textBoxCapitulos.Text = capitulos.ToString();
+
+        }
+
+        private void temporadasDown_Click(object sender, RoutedEventArgs e)
+        {
+            temporadas--;
+            this.textBoxTemporadas.Text = temporadas.ToString();
+        }
+
+        private void textBoxTemporadas_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBoxCapitulos_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox_NombreSerie_TextChanged_1(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

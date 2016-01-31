@@ -400,7 +400,7 @@ namespace MediaFilm
         }
         private void MenuItemAñadirSerie_Click(object sender, RoutedEventArgs e)
         {
-
+            new Window_AddSerie().Show();
         }
         private void MenuItemAñadirPatron_Click(object sender, RoutedEventArgs e)
         {
