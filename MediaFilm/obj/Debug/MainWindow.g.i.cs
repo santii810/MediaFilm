@@ -81,15 +81,7 @@ namespace MediaFilm {
         #line hidden
         
         
-        #line 24 "..\..\MainWindow.xaml"
-        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.MenuItem MenuItemBuscarIntrusos;
-        
-        #line default
-        #line hidden
-        
-        
-        #line 30 "..\..\MainWindow.xaml"
+        #line 28 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Button buttonOrdenaSeries;
         
@@ -97,7 +89,7 @@ namespace MediaFilm {
         #line hidden
         
         
-        #line 31 "..\..\MainWindow.xaml"
+        #line 29 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.ListBox listBox;
         
@@ -180,24 +172,15 @@ namespace MediaFilm {
             #line hidden
             return;
             case 6:
-            this.MenuItemBuscarIntrusos = ((System.Windows.Controls.MenuItem)(target));
-            
-            #line 24 "..\..\MainWindow.xaml"
-            this.MenuItemBuscarIntrusos.Click += new System.Windows.RoutedEventHandler(this.MenuItemBuscarIntrusos_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 7:
             this.buttonOrdenaSeries = ((System.Windows.Controls.Button)(target));
             
-            #line 30 "..\..\MainWindow.xaml"
+            #line 28 "..\..\MainWindow.xaml"
             this.buttonOrdenaSeries.Click += new System.Windows.RoutedEventHandler(this.buttonOrdenaSeries_Click);
             
             #line default
             #line hidden
             return;
-            case 8:
+            case 7:
             this.listBox = ((System.Windows.Controls.ListBox)(target));
             return;
             }

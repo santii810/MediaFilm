@@ -140,22 +140,24 @@ namespace MediaFilm
             }
             return series;
         }
-        public Serie buscarSerie()
+        public Serie buscarSerie(string nombreSerie)
         {
             Serie serie = new Serie();
             if (cargarXML())
             {
                 foreach (XmlNode item in documento.GetElementsByTagName("serie"))
                 {
-                    serie.Add(new Serie
-                    {
-                        titulo = item["titulo"].InnerText.ToString(),
-                        temporadaActual = Convert.ToInt32(item["temporadaActual"].InnerText.ToString()),
-                        numeroTemporadas = Convert.ToInt32(item["numeroTemporadas"].InnerText.ToString()),
-                        capitulosPorTemporada = Convert.ToInt32(item["capitulosPorTemporada"].InnerText.ToString()),
-                        estado = item["estado"].InnerText,
-                        extension = item["extension"].InnerText
-                    });
+                    if (item["titulo"].InnerText.ToString().Equals(nombreSerie)){
+                        serie = new Serie
+                        {
+                            titulo = item["titulo"].InnerText.ToString(),
+                            temporadaActual = Convert.ToInt32(item["temporadaActual"].InnerText.ToString()),
+                            numeroTemporadas = Convert.ToInt32(item["numeroTemporadas"].InnerText.ToString()),
+                            capitulosPorTemporada = Convert.ToInt32(item["capitulosPorTemporada"].InnerText.ToString()),
+                            estado = item["estado"].InnerText,
+                            extension = item["extension"].InnerText
+                        };
+                    }
                 }
             }
             return serie;
@@ -281,7 +283,7 @@ namespace MediaFilm
             }
             else
             {
-                xmlError.añadirEntrada(new Log ("Error","patron '" + patron.nombreSerie + "-" + patron.textoPatron + "' Ya existe " ));
+                xmlError.añadirEntrada(new Log("Error", "patron '" + patron.nombreSerie + "-" + patron.textoPatron + "' Ya existe "));
             }
         }
         public XmlNode crearNodo(Patron patron)

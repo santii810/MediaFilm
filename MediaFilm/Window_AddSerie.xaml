@@ -1,0 +1,24 @@
+﻿<Window x:Class="MediaFilm.Window_AddSerie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaFilm"
+        mc:Ignorable="d"
+        Title="Window_AddSerie" Height="644.125" Width="808.625">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="401*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Nombre" HorizontalAlignment="Left" Height="40" Margin="70,48,0,0" VerticalAlignment="Top" Width="132"/>
+        
+        <TextBox x:Name="textBox_NombreSerie" HorizontalAlignment="Left" Height="35" Margin="202,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"/>
+        <Label x:Name="label_Copy" Content="Extension" HorizontalAlignment="Left" Height="40" Margin="70,88,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label x:Name="label_Copy1" Content="Temporadas" HorizontalAlignment="Left" Height="40" Margin="70,128,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label x:Name="label_Copy2" Content="Capitulos temporada" HorizontalAlignment="Left" Height="40" Margin="70,168,0,0" VerticalAlignment="Top" Width="132"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Height="30" Margin="202,93,0,0" VerticalAlignment="Top" Width="183"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
