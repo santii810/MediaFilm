@@ -17,7 +17,7 @@ namespace MediaFilm
         private LoggerXML xmlErrorLog;
         private SeriesXML xmlSeries;
         //clases
-        private Config config;
+        static public Config config;
 
         //listas
         List<Serie> series = new List<Serie>();
@@ -256,8 +256,8 @@ namespace MediaFilm
                 if (itSerie.estado.Equals("A"))
                 {
                     itSerie.getPatrones(config);
-                    //calculo de patrones: Numero de patrones de la serie en el xml * temporadas activas de la serie * numero de capitulos de cada temporada * 8 (strings que se comprueban en cada patron)
-                    numeroPatrones += (itSerie.patrones.Count * ((itSerie.numeroTemporadas - itSerie.temporadaActual) + 1) * itSerie.capitulosPorTemporada) * 8;
+                    //calculo de patrones: Numero de patrones de la serie en el xml * temporadas activas de la serie * numero de capitulos de cada temporada * 12 (strings que se comprueban en cada patron)
+                    numeroPatrones += (itSerie.patrones.Count * ((itSerie.numeroTemporadas - itSerie.temporadaActual) + 1) * itSerie.capitulosPorTemporada) * 12;
                     seriesActivas++;
                     foreach (Patron itPatron in itSerie.patrones)
                     {
@@ -272,18 +272,25 @@ namespace MediaFilm
                                     //patrones para capitulos<10  y extension == mkv
                                     itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*.mkv" ,
                                     itPatron.textoPatron + "*" + temp.ToString() + "x0" + cap.ToString() + "*.mkv" ,
+                                    temp.ToString()+"x0"+cap.ToString()+"*"+itPatron.textoPatron+"*.mkv",
+
                                     //patrones para capitulos<10  y extension == avi
                                     itPatron.textoPatron + "*" + temp.ToString() + "0" + cap.ToString() + "*.avi" ,
                                     itPatron.textoPatron + "*" + temp.ToString() + "x0" + cap.ToString() + "*.avi" ,
+                                    temp.ToString()+"x0"+cap.ToString()+"*"+itPatron.textoPatron+"*.avi",
+
                                     //patrones para capitulos>10  y extension == mkv
                                     itPatron.textoPatron + "*" + temp.ToString() + cap.ToString() + "*.mkv",
                                     itPatron.textoPatron + "*" + temp.ToString() + "x" + cap.ToString() + "*.mkv",
+                                    temp.ToString()+"x"+cap.ToString()+"*"+itPatron.textoPatron+"*.mkv",
+
                                     //patrones para capitulos>10  y extension == avi
                                     itPatron.textoPatron + "*" + temp.ToString() + cap.ToString() + "*.avi",
-                                    itPatron.textoPatron + "*" + temp.ToString() + "x" + cap.ToString() + "*.avi"
+                                    itPatron.textoPatron + "*" + temp.ToString() + "x" + cap.ToString() + "*.avi",
+                                    temp.ToString()+"x"+cap.ToString()+"*"+itPatron.textoPatron+"*.avi",
                               };
 
-                                for (int i = 0; i <= 3; i++)
+                                for (int i = 0; i < 6; i++)
                                 {
                                     if (cap >= 10) fi = obtenerCoincidenciaBusqueda(strPatrones[i + 4]);
                                     else fi = obtenerCoincidenciaBusqueda(strPatrones[i]);

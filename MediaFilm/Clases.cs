@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MediaFilm
 {
-    class Config
+    public class Config
     {
         public string dirTorrent { get; set; }
         public string mediaLog { get; set; }

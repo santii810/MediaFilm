@@ -22,9 +22,13 @@ namespace MediaFilm
 
         public int temporadas;
         public int capitulos;
+
         public Window_AddSerie()
         {
             InitializeComponent();
+            comboBox.Items.Add("avi");
+            comboBox.Items.Add("mkv");
+            comboBox.Items.Add("mp4");
         }
 
 
@@ -67,6 +71,35 @@ namespace MediaFilm
 
         private void textBox_NombreSerie_TextChanged_1(object sender, TextChangedEventArgs e)
         {
+
+        }
+
+        private void button_AddSerie_Click(object sender, RoutedEventArgs e)
+        {
+            Serie tmp = new Serie
+            {
+                titulo = textBox_NombreSerie.Text,
+                numeroTemporadas = temporadas,
+                capitulosPorTemporada = capitulos,
+                temporadaActual = 1,
+                estado = "A"
+            };
+            switch (comboBox.SelectedIndex)
+            {
+                case 0:
+                    tmp.extension = ".avi";
+                    break;
+                case 1:
+                    tmp.extension = ".mkv";
+                    break;
+                case 2:
+                    tmp.extension = ".mp4";
+                    break;
+                default:
+                    break;
+            }
+            SeriesXML gestorSeries = new SeriesXML(MainWindow.config);
+
 
         }
     }
