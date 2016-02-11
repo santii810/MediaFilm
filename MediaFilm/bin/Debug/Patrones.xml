@@ -70,6 +70,7 @@
   <serie titulo="Dexter">Dexter</serie>
   <serie titulo="Dominion">Dominion</serie>
   <serie titulo="Dos chicas sin blanca">2chicas sin blanca</serie>
+  <serie titulo="Dos chicas sin blanca">2 chicas sin blanca</serie>
   <serie titulo="Dos chicas sin blanca">2chicas.sin.blanca</serie>
   <serie titulo="Dos chicas sin blanca">2.chicas.sin.blanca</serie>
   <serie titulo="Dos chicas sin blanca">Dos.chicas.sin.blanca</serie>
@@ -137,6 +138,8 @@
   <serie titulo="Les revenant">Les.revenant</serie>
   <serie titulo="Looking">Looking</serie>
   <serie titulo="Los cien">Los cien</serie>
+  <serie titulo="Los cien">Los 100</serie>
+  <serie titulo="Los cien">Los.100</serie>
   <serie titulo="Los cien">Los.cien</serie>
   <serie titulo="Los crimenes de Fjallbacka">Los crimenes de Fjallbacka</serie>
   <serie titulo="Los crimenes de Fjallbacka">Los.crimenes.de.Fjallbacka</serie>
@@ -199,6 +202,8 @@
   <serie titulo="Sense 8">Sense 8</serie>
   <serie titulo="Sense 8">Sense.8</serie>
   <serie titulo="ShadownHunters">shdwhntr</serie>
+  <serie titulo="ShadownHunters">Shadowhunters</serie>
+  <serie titulo="ShadownHunters">sdhnt</serie>
   <serie titulo="ShadownHunters">ShadownHunters</serie>
   <serie titulo="Shameless">Shameless</serie>
   <serie titulo="Silicon Valley">Silicon Valley</serie>
@@ -247,6 +252,8 @@
   <serie titulo="The newsroom">The.newsroom</serie>
   <serie titulo="The returned">The returned</serie>
   <serie titulo="The returned">The.returned</serie>
+  <serie titulo="The strain">Tstrn</serie>
+  <serie titulo="The strain">Tst</serie>
   <serie titulo="The strain">The strain</serie>
   <serie titulo="The strain">The.strain</serie>
   <serie titulo="The Walking Dead">The Walking Dead</serie>
@@ -277,8 +284,25 @@
   <serie titulo="The Walking Dead">TWD</serie>
   <serie titulo="The Walking Dead">TVVD</serie>
   <serie titulo="Transparent">Tran</serie>
-  <serie titulo="Into the badlands">Into the badlands</serie> 
+  <serie titulo="Into the badlands">Into the badlands</serie>
   <serie titulo="Into the badlands">Intbdlan</serie>
   <serie titulo="Into the badlands">ITB</serie>
   <serie titulo="Into the badlands">Into.the.badlands</serie>
+  <serie titulo="El sequito">El sequito</serie>
+  <serie titulo="El sequito">El.sequito</serie>
+  <serie titulo="Black Sails">BSails</serie>
+  <serie titulo="Black Sails">BS</serie>
+  <serie titulo="Black Sails">Blck Sails</serie>
+  <serie titulo="Black Sails">BlckSails</serie>
+  <serie titulo="Black Sails">Black Sails</serie>
+  <serie titulo="Black Sails">Black.Sails</serie>
+  <serie titulo="Angie Tribeca">AT</serie>
+  <serie titulo="Angie Tribeca">Angie Tribeca</serie>
+  <serie titulo="Angie Tribeca">Angie.Tribeca</serie>
+  <serie titulo="Sin limites">Sl</serie>
+  <serie titulo="Sin limites">Sin limites</serie>
+  <serie titulo="Sin limites">Sin.limites</serie>
+  <serie titulo="Las cronicas de shannara">Las cronicas de shannara</serie>
+  <serie titulo="Las cronicas de shannara">LCDsh</serie>
+  <serie titulo="Las cronicas de shannara">Las.cronicas.de.shannara</serie>
 </raiz>

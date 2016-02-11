@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Logs>
+  <Log fecha="10/02/2016 17:31:32" tipo="AñadirSerie" mensaje="Serie 'El sequito' añadida correctamente" />
+  <Log fecha="10/02/2016 17:31:32" tipo="AñadirPatron" mensaje="patron 'El sequito-El sequito' añadido correctamente a serie " />
+  <Log fecha="10/02/2016 17:31:32" tipo="AñadirPatron" mensaje="patron 'El sequito-El.sequito' añadido correctamente a serie " />
+  <Log fecha="10/02/2016 17:33:41" tipo="AñadirSerie" mensaje="Serie 'Black Sails' añadida correctamente" />
+  <Log fecha="10/02/2016 17:33:41" tipo="AñadirPatron" mensaje="patron 'Black Sails-Black Sails' añadido correctamente a serie " />
+  <Log fecha="10/02/2016 17:33:41" tipo="AñadirPatron" mensaje="patron 'Black Sails-Black.Sails' añadido correctamente a serie " />
+  <Log fecha="10/02/2016 17:35:08" tipo="AñadirSerie" mensaje="Serie 'Angie Tribeca' añadida correctamente" />
+  <Log fecha="10/02/2016 17:35:08" tipo="AñadirPatron" mensaje="patron 'Angie Tribeca-Angie Tribeca' añadido correctamente a serie " />
+  <Log fecha="10/02/2016 17:35:08" tipo="AñadirPatron" mensaje="patron 'Angie Tribeca-Angie.Tribeca' añadido correctamente a serie " />
+  <Log fecha="10/02/2016 17:35:48" tipo="AñadirSerie" mensaje="Serie 'Sin limites' añadida correctamente" />
+  <Log fecha="10/02/2016 17:35:48" tipo="AñadirPatron" mensaje="patron 'Sin limites-Sin limites' añadido correctamente a serie " />
+  <Log fecha="10/02/2016 17:35:48" tipo="AñadirPatron" mensaje="patron 'Sin limites-Sin.limites' añadido correctamente a serie " />
+  <Log fecha="10/02/2016 17:36:08" tipo="AñadirSerie" mensaje="Serie 'Las cronicas de shannara' añadida correctamente" />
+  <Log fecha="10/02/2016 17:36:08" tipo="AñadirPatron" mensaje="patron 'Las cronicas de shannara-Las cronicas de shannara' añadido correctamente a serie " />
+  <Log fecha="10/02/2016 17:36:08" tipo="AñadirPatron" mensaje="patron 'Las cronicas de shannara-Las.cronicas.de.shannara' añadido correctamente a serie " />
+  <Log fecha="10/02/2016 17:44:23" tipo="AñadirSerie" mensaje="Serie '' añadida correctamente" />
+  <Log fecha="10/02/2016 17:44:23" tipo="AñadirPatron" mensaje="patron '-' añadido correctamente a serie " />
+</Logs>

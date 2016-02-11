@@ -56,9 +56,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddPatron.xaml.cs">
+      <DependentUpon>AddPatron.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window_AddSerie.xaml.cs">
       <DependentUpon>Window_AddSerie.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddPatron.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

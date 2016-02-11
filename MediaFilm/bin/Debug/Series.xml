@@ -651,9 +651,9 @@
   <serie titulo="Los cien">
     <titulo>Los cien</titulo>
     <temporadaActual>1</temporadaActual>
-    <numeroTemporadas>2</numeroTemporadas>
+    <numeroTemporadas>3</numeroTemporadas>
     <capitulosPorTemporada>25</capitulosPorTemporada>
-    <estado>D</estado>
+    <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
   <serie titulo="Los crimenes de Fjallbacka">
@@ -864,7 +864,7 @@
     <estado>D</estado>
     <extension>.mkv</extension>
   </serie>
-    <serie titulo="Recien llegados">
+  <serie titulo="Recien llegados">
     <titulo>Recien llegados</titulo>
     <temporadaActual>1</temporadaActual>
     <numeroTemporadas>1</numeroTemporadas>
@@ -1212,7 +1212,6 @@
     <estado>D</estado>
     <extension>.avi</extension>
   </serie>
-
   <serie titulo="Wilfred">
     <titulo>Wilfred</titulo>
     <temporadaActual>2</temporadaActual>
@@ -1221,5 +1220,44 @@
     <estado>F</estado>
     <extension>.avi</extension>
   </serie>
-
+  <serie titulo="El sequito">
+    <titulo>El sequito</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>8</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
+  <serie titulo="Black Sails">
+    <titulo>Black Sails</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>3</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Angie Tribeca">
+    <titulo>Angie Tribeca</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Sin limites">
+    <titulo>Sin limites</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
+  <serie titulo="Las cronicas de shannara">
+    <titulo>Las cronicas de shannara</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>1</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.mkv</extension>
+  </serie>
 </Series>

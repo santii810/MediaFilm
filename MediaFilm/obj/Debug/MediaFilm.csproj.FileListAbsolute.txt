@@ -46,3 +46,5 @@ C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.Properties.
 C:\Users\dam209\Repositorios\MediaFilm\MediaFilm\obj\Debug\MediaFilm.csproj.GenerateResource.Cache
 C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\Window_AddSerie.g.cs
 C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\Window_AddSerie.baml
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\AddPatron.g.cs
+C:\Users\sgomez\Repositorios\MediaFilm\MediaFilm\obj\Debug\AddPatron.baml

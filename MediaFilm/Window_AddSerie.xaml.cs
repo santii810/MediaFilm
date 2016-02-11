@@ -20,8 +20,8 @@ namespace MediaFilm
     public partial class Window_AddSerie : Window
     {
 
-        public int temporadas;
-        public int capitulos;
+        public int temporadas = 1;
+        public int capitulos = 25;
 
         public Window_AddSerie()
         {
@@ -29,6 +29,8 @@ namespace MediaFilm
             comboBox.Items.Add("avi");
             comboBox.Items.Add("mkv");
             comboBox.Items.Add("mp4");
+            this.textBoxTemporadas.Text = temporadas.ToString();
+            this.textBoxCapitulos.Text = capitulos.ToString();
         }
 
 
@@ -96,10 +98,21 @@ namespace MediaFilm
                     tmp.extension = ".mp4";
                     break;
                 default:
+                    tmp.extension = ".mkv";
                     break;
-            }
-            SeriesXML gestorSeries = new SeriesXML(MainWindow.config);
 
+            }
+            if (tmp.titulo == "")
+            {
+                MessageBox.Show("No has escrito titulo");
+            }
+            else
+            {
+                SeriesXML gestorSeries = new SeriesXML(MainWindow.config);
+                gestorSeries.añadirSerie(tmp);
+                MessageBox.Show("Serie añadida correctamente");
+                this.Close();
+            }
 
         }
     }

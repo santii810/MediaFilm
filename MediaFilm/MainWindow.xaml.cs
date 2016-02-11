@@ -292,7 +292,7 @@ namespace MediaFilm
 
                                 for (int i = 0; i < 6; i++)
                                 {
-                                    if (cap >= 10) fi = obtenerCoincidenciaBusqueda(strPatrones[i + 4]);
+                                    if (cap >= 10) fi = obtenerCoincidenciaBusqueda(strPatrones[i + 6]);
                                     else fi = obtenerCoincidenciaBusqueda(strPatrones[i]);
                                     if (fi != null)
                                     {
