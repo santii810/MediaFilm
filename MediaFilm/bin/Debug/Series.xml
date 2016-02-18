@@ -1260,4 +1260,12 @@
     <estado>A</estado>
     <extension>.mkv</extension>
   </serie>
+  <serie titulo="The last man of the earth">
+    <titulo>The last man of the earth</titulo>
+    <temporadaActual>1</temporadaActual>
+    <numeroTemporadas>2</numeroTemporadas>
+    <capitulosPorTemporada>25</capitulosPorTemporada>
+    <estado>A</estado>
+    <extension>.avi</extension>
+  </serie>
 </Series>

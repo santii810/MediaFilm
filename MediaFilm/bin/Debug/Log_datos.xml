@@ -17,4 +17,7 @@
   <Log fecha="10/02/2016 17:36:08" tipo="AñadirPatron" mensaje="patron 'Las cronicas de shannara-Las.cronicas.de.shannara' añadido correctamente a serie " />
   <Log fecha="10/02/2016 17:44:23" tipo="AñadirSerie" mensaje="Serie '' añadida correctamente" />
   <Log fecha="10/02/2016 17:44:23" tipo="AñadirPatron" mensaje="patron '-' añadido correctamente a serie " />
+  <Log fecha="18/02/2016 22:18:15" tipo="AñadirSerie" mensaje="Serie 'The last man of the world' añadida correctamente" />
+  <Log fecha="18/02/2016 22:18:15" tipo="AñadirPatron" mensaje="patron 'The last man of the world-The last man of the world' añadido correctamente a serie " />
+  <Log fecha="18/02/2016 22:18:15" tipo="AñadirPatron" mensaje="patron 'The last man of the world-The.last.man.of.the.world' añadido correctamente a serie " />
 </Logs>
